@@ -1,0 +1,11 @@
+.card-container{
+	background-color: #fff;
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+	font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+	height: 250px;
+}
+
+.card{
+	border-radius: 15px !important;
+}
