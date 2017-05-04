@@ -1,51 +1,11 @@
 .card-container{
 	background-color: #fff;
-}
-.card-cover{
-	width: 25% !important;
-    height: 250px;
-    border: 5px solid black;
-    background-color: #502D19 !important;
-    box-sizing: border-box;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-shadow: 10px 10px;
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+	font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+	height: 250px;
 }
 
-.card-head{
-	width: 100%;
-	height: 25%;
-	
-	color: white;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 5px;
-	font-size: 25px;
-}
-
-.card-middle{
-	width: 100%;
-	height: 50%;
-	font: 16px;
-	color: white;
-	padding-top: 10px;
-}
-
-.card-end{
-	width: 100%;
-	height: 25%;
-	padding-top: 20px;
-}
-
-.txt-btn{
-	color: rgb(66,133,244);
-	cursor: pointer;
-	font-family: "Roboto" ,sans-serif;
-	font-size: 14px;
-	font-weight: 500;
-	text-transform: uppercase;
-	line-height: 22px;
-
+.card{
+	border-radius: 15px !important;
 }
