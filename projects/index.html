@@ -14,23 +14,44 @@
 
     <script src="../assets/library/jquery.min.js"></script>
     <script src="../semantic-ui/semantic.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/template.js"></script>
-     <script> 
-  $(function(){
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
-  });
-</script> 
 
 </head>
 <body>
 
-<!--****header****-->
+<!-- Following Menu -->
+<div id = "header"><script src="../header.js"></script></div>
 
-   <div id = "header"></div>
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+    <a class="active item">Home</a>
+    <a class="item">Work</a>
+    <a class="item">Company</a>
+    <a class="item">Careers</a>
+    <a class="item">Login</a>
+    <a class="item">Signup</a>
+</div>
 
 
+<!-- Page Contents -->
+<div class="pusher">
+    <div class="ui inverted vertical center aligned segment pageHeader" style="background: rgba(0, 0, 0, 0) url('images/projects-hero.jpg') repeat scroll 0 0 / cover ;">
+        <div class="ui large secondary inverted menu mobileMenu">
+            <div class="ui container">
+                <div class="item"><img src="../assets/images/kosslogo.png"></div>
+                <div class="right item">
+                    <a class="openMenu item">
+                        <i class="sidebar icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="ui text container">
+            <h1 class="ui inverted header">Projects</h1>
+            <h2>A curated collection of open source projects which are contributed and maintained by our different
+            members. </h2>
+        </div>
+    </div>
 
     <!--******     START CODING FROM HERE       *****-->
 
@@ -89,11 +110,9 @@
     </div>
 
 
-    <!--******     END YOUR CODE HERE      *****-->
-
     <!--****footer****-->
 
-   <div id = "footer"></div>
+    <div id = "footer"><script src="../footer.js"></script></div>
 
 </body>
 
