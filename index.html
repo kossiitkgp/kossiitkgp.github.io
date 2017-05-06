@@ -16,6 +16,7 @@
   <script src="semantic-ui/sidebar.js"></script>
   <script src="semantic-ui/transition.js"></script>
   <script src="js/homepage.js"></script>
+  <script src="header.js"></script>
 </head>
 <body>
 
@@ -27,11 +28,7 @@
         <!--and add the 'active' class along with 'item' class on your page name-->
         <div class="item"><img src="./assets/images/kosslogo.png"></div>
         <div class="right menu">
-        	<a class="item" href="./index.html">Home</a>
-                <a class="item" href="./events/index.html">Events</a>
-        	<a class="item" href="./projects/index.html">Projects</a>
-                <a class="item" href="./team/index.html">Our Team</a>
-                <a class="item"></a>
+        	<script>header('home');</script>
         </div>
     </div>
 </div>
@@ -59,10 +56,7 @@
   </a>
 
   <div class="right item">
-        <a class="active item" href="./index.html">Home</a>
-        <a class="item" href="./events/index.html">Events</a>
-        <a class="item" href="./projects/index.html">Projects</a>
-        <a class="item" href="./team/index.html">Our Team</a>
+        <script>header('home');</script>
     <!a class="ui inverted button" href="events/index.html">
   </div>
   </div>
