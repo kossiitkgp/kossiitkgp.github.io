@@ -66,34 +66,57 @@
 
     <!--******     START CODING FROM HERE       *****-->
 
+    <script type="text/javascript">
+        function send(form) {
+                   var request = new XMLHttpRequest();
+                   var data = new FormData(form);
+                   var url = "https://test-mail-dpd.herokuapp.com/mail"
+                  request.onreadystatechange = function() {
+                    console.log(request.readyState);
+                    console.log(request.status);
+                    console.log(request.content);
+                  if (request.readyState === 4) {
+                        if (request.status === 200) {
+                                document.getElementById('flag').innerHTML = "Sent!"
+                            } else {
+                                document.getElementById('flag').innerHTML = "Not Sent!"
+                            }
+                        }
+                    };  
+                    request.open("POST", url , true);
+                    request.send(data);
+                }        
+
+                    
+    </script>
+
+
     <!--Below is a sample layout. You don't have to compulsorily use it-->
     <div class="ui vertical stripe segment">
         <div class="ui middle aligned stackable grid container">
             <div class="row">
                 <div class="wide column">
                     <h3 class="ui header">Contact Us</h3>
-                    <form class="ui form">
-                        <div class="field">
+                    <form class="ui big form" id="form">
+                        <div class="required field">
                             <label>Name</label>
                             <input type="text" name="name" placeholder="Your Name">
                         </div>
-                        <div class="field">
+                        <div class="required field">
                             <label>Email ID</label>
                             <input type="email" name="email" placeholder="Your Email ID">
                         </div>
                         <div class="field">
                             <label>Message</label>
-                            <textarea name="message"></textarea>
-                        </div> 
+                            <textarea name="msg"></textarea>
+                        </div>
                     </form>    
                 </div>
-                <!-- <div class="six wide right floated column">
-                    <img src="../assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
-                </div> -->
             </div>
             <div class="row">
                 <div class="center aligned column">
-                    <a class="ui huge button" >Submit</a>
+                    <a class="ui huge button" onclick="send(form)" >Submit</a>
+                    <label id="flag"></label>
                 </div>
             </div>
         </div>
