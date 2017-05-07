@@ -11,6 +11,7 @@
   <meta  content='KOSS organizes various technical workshops and seminars in the campus in order to continue the healthy culture of Technology and Open Source.' name='description' />
   <meta content='KOSS, Kharagpur Open Source Society, IIT Kharagpur, open source, KWOC, Winter of Code, Ubuntu install, Gsoc Seminar, Android, workshop, hackathon, Linux environment, Git Development Workflow, Algorithms and Data Structures' name='keywords'/>
   <link rel="stylesheet" type="text/css" href="semantic-ui/semantic.css">
+    <link rel="stylesheet" type="text/css" href="css/preloader.css">
   <link rel="stylesheet" type="text/css" href="css/homepage.css">
   <link rel="icon" href="assets/images/kosslogo.png">
   <script src="assets/library/jquery.min.js"></script>
@@ -23,7 +24,14 @@
 <body>
 
 <!-- Following Menu -->
-   
+<div id ="loader">
+  <div class="console-container">
+    <span id="text"></span>
+    <div class="console-underscore" id="console">&#95;</div>
+  </div>
+</div>
+<script src="js/preloader.js" type="text/javascript"></script>
+
    <div class="ui large top menu hidden fixed">
     <div class="ui container">
         <!--The menu items are not yet decided but it is recommended to add the page you are working on in this menu-->
@@ -137,6 +145,6 @@
 
     <div id = "footer"><script src="./footer.js"></script></div>
 
-    
+
 </body>
 </html>
