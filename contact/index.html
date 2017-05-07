@@ -68,26 +68,69 @@
 
     <script type="text/javascript">
         function send(form) {
-                   var request = new XMLHttpRequest();
-                   var data = new FormData(form);
-                   var url = "https://test-mail-dpd.herokuapp.com/mail"
-                  request.onreadystatechange = function() {
+                     document.getElementById('flag').innerHTML = "";
+                if(validate()){
+                    document.getElementById('loading-flag').setAttribute("class","ui active inverted dimmer");
+                    var request = new XMLHttpRequest();
+                    var data = new FormData(form);
+                    var url = "https://test-mail-dpd.herokuapp.com/mail"
+                    request.onreadystatechange = function() {
                     console.log(request.readyState);
                     console.log(request.status);
                     console.log(request.content);
                   if (request.readyState === 4) {
                         if (request.status === 200) {
-                                document.getElementById('flag').innerHTML = "Sent!"
+                                document.getElementById('flag').innerHTML = "Sent!";
+                                document.getElementById('loading-flag').removeAttribute("class");
                             } else {
-                                document.getElementById('flag').innerHTML = "Not Sent!"
+                                document.getElementById('flag').innerHTML = "Not Sent!";
+                                document.getElementById('loading-flag').removeAttribute("class");
                             }
                         }
                     };  
                     request.open("POST", url , true);
                     request.send(data);
-                }        
+                }
+                    else{
+                        return false;
+                    }
+                }       
 
-                    
+        function validate(){
+            var flag = 0;
+               if(document.getElementById("name").value == ""){
+                        //alert("Please enter your name!");
+                        document.getElementById("name-error").setAttribute("class","ui form error");
+                        flag = 1;
+               }    
+               else{
+                        document.getElementById("name-error").removeAttribute("class");
+            
+               }
+             if(document.getElementById("email").value == ""){
+                        document.getElementById("email-error").setAttribute("class","ui form error");
+                        flag = 1;
+                }
+                else{
+                        var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                        if(regex.test(document.getElementById("email").value))
+                        {
+                            document.getElementById("email-error").removeAttribute("class");
+                        }
+                        else{
+                            document.getElementById("email-error").setAttribute("class","ui form error");
+                            flag = 1;  
+                        }
+               }
+               if(flag == 1){
+                return false;
+               } else {
+                return true;
+               }
+
+
+        }
+
     </script>
 
 
@@ -100,12 +143,26 @@
                     <form class="ui big form" id="form">
                         <div class="required field">
                             <label>Name</label>
-                            <input type="text" name="name" placeholder="Your Name">
+                            <input type="text" name="name" id="name" placeholder="Your Name">
                         </div>
+                       
+                        <div  id="name-error">
+                        <div class="ui error message">
+                            <div class="header">Error!</div>
+                             <p>Please enter your name!</p>
+                             </div>
+                      </div>
                         <div class="required field">
                             <label>Email ID</label>
-                            <input type="email" name="email" placeholder="Your Email ID">
+                            <input type="email" name="email" id="email" placeholder="Your Email ID">
                         </div>
+                        <div  id="email-error">
+                        <div class="ui error message">
+                                <div class="header">Error!</div>
+                             <p>Please enter a valid Email ID!</p>
+                             </div>
+                      </div>
+
                         <div class="field">
                             <label>Message</label>
                             <textarea name="msg"></textarea>
@@ -115,8 +172,13 @@
             </div>
             <div class="row">
                 <div class="center aligned column">
-                    <a class="ui huge button" onclick="send(form)" >Submit</a>
-                    <label id="flag"></label>
+                    <a class="ui huge button" onclick="send(form)">Submit</a>
+                    <label id="flag">   
+                    </label>
+                    <div class="" id="loading-flag">
+                    <div class="ui loader">        
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
