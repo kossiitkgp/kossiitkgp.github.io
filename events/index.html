@@ -113,7 +113,7 @@
     		Details
 	   </a>
 	   <br><br>
-	   <div id="modaldiv" class="ui fullscreen modal">
+	   <div id="modaldiv" class="ui modal">
 	     <i class="close icon"></i>		 
 		<div>
 		    <br/>
@@ -124,7 +124,19 @@
 	   </div>
            <script type="text/javascript">
 			  $('#logIn').click(function(){
-			    $('.fullscreen.modal').modal('show');    
+			    $('.modal').modal('setting', {
+				    onShow : function () {
+					$(this).css({
+					    'margin' : '10px',
+					    'position' : 'fixed',
+					    'top' : '0',
+					    'bottom' : '0',
+					    'left' : '0',
+					    'right' : '0',
+					    'width' : 'auto'
+					});
+				    }
+				  }).modal('show');     
 			  });
            </script>
            <div class="ui basic blue button">Register</div>
