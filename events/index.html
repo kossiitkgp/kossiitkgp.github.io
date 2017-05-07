@@ -20,7 +20,25 @@
     <script src="../semantic-ui/semantic.js"></script>
     <script src="../js/template.js"></script>
     <script src="../header.js"></script>
+	<script>
 
+		// set initial size
+		$( document ).ready(SetIframeSize);
+
+		// resize on window resize
+		$(window).on('resize', SetIframeSize);
+
+		function SetIframeSize(){
+		    $("#external").width($(window).width() - 18); // added margin for scrollbars
+		    $("#external").height($(window).height() - 35);
+		}
+
+	</script>
+	<style>
+	body {
+    overflow:hidden;
+}
+	</style>
 </head>
 <body>
 
@@ -96,9 +114,13 @@
 	   </a>
 	   <br><br>
 	   <div id="modaldiv" class="ui fullscreen modal">
-	     <i class="close icon"></i>
-		 <iframe src="detail.html" width="1300" height="600">
-		</iframe> 
+	     <i class="close icon"></i>		 
+		<div>
+		    <br/>
+		    <div id="iframe-wrapper" align="center" style="z-index: 0">
+			<iframe id="external" src="detail.html"></iframe>
+		    </div>   
+		</div>
 	   </div>
            <script type="text/javascript">
 			  $('#logIn').click(function(){
