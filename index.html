@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Standard Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Standard Meta -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properties -->
   <title>KOSS-Kharagpur Open Source Society</title>
@@ -20,10 +20,12 @@
   <script src="semantic-ui/transition.js"></script>
   <script src="js/homepage.js"></script>
   <script src="header.js"></script>
+
 </head>
 <body>
 
 <!-- Following Menu -->
+
 <div id ="loader">
   <div class="console-container">
     <span id="text"></span>
@@ -33,17 +35,44 @@
 <script src="js/preloader.js" type="text/javascript"></script>
 
    <div class="ui large top menu hidden fixed">
+
     <div class="ui container">
         <!--The menu items are not yet decided but it is recommended to add the page you are working on in this menu-->
         <!--and add the 'active' class along with 'item' class on your page name-->
-        <div class="item"><img src="./assets/images/kosslogo.png"></div>
+        <div class="item"><img src="assets/images/kosslogo.png"></div>
+        <a class="item" href="./index.html">Home</a>
+        <a class="item" href="./other.html">Other</a>
+        <div class="ui simple dropdown item">
+            Dropdown <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="#">Link Item</a>
+                <a class="item" href="#">Link Item</a>
+                <div class="divider"></div>
+                <div class="header">Header Item</div>
+                <div class="item">
+                    <i class="dropdown icon"></i>
+                    Sub Menu
+                    <div class="menu">
+                        <a class="item" href="#">Link Item</a>
+                        <a class="item" href="#">Link Item</a>
+                    </div>
+                </div>
+                <a class="item" href="#">Link Item</a>
+            </div>
+        </div>
+        <a class="item" href="team">Our Team</a>
+        <a class="item" href="projects">Projects</a>
+        <a class="item" href="help">Help</a>
         <div class="right menu">
-        	<script>header('home');</script>
+            <div class="item">
+                <a class="ui button">Talks</a>
+            </div>
+            <div class="item">
+                <a class="ui primary button" href="events/index.html">Events</a>
+            </div>
         </div>
     </div>
 </div>
-
-
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
@@ -57,91 +86,189 @@
 
 <!-- Page Contents -->
 <div class="pusher">
-  <div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui inverted vertical masthead center aligned segment">
 
-    <div class="ui container">
-      <div class="ui large secondary inverted pointing menu">
-  <a class="toc item">
-      <i class="sidebar icon"></i>
-  </a>
-  <div class="item"><img src="./assets/images/kosslogo_bw.png"></div>
-  <div class="right item">
-        <script>header('home');</script>
-    <!a class="ui inverted button" href="events/index.html">
-  </div>
-  </div>
+        <div class="ui container">
+            <div class="ui large secondary inverted pointing menu">
+                <a class="toc item">
+                    <i class="sidebar icon"></i>
+                </a>
+                <a class="active item" href="./index.html">Home</a>
+                <a class="item" href="./other.html">Other</a>
+                <div class="ui simple dropdown item">
+                    Dropdown <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="#">Link Item</a>
+                        <a class="item" href="#">Link Item</a>
+                        <div class="divider"></div>
+                        <div class="header">Header Item</div>
+                        <div class="item">
+                            <i class="dropdown icon"></i>
+                            Sub Menu
+                            <div class="menu">
+                                <a class="item" href="#">Link Item</a>
+                                <a class="item" href="#">Link Item</a>
+                            </div>
+                        </div>
+                        <a class="item" href="#">Link Item</a>
+                    </div>
+                </div>
+                <a class="item" href="team">Our Team</a>
+                <a class="item" href="projects">Projects</a>
+                <a class="item" href="help">Help</a>
+                <div class="right item">
+                    <a class="ui inverted button">Talks</a>
+                    <a class="ui inverted button" href="events/index.html">Events</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui container slider-box">
+            <div class="drag-slider">
+                <img src="assets/images/trial.png" alt="">
+                <div class="resize">
+                    <img src="assets/images/kossmain2.png" alt="">
+                </div>
+                <span class="handle"></span>
+            </div>
+        </div>
+        <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="elementor-shape-fill" d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9">
+                </path>
+            </svg>
+        </div>
     </div>
-
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        Imagine-a-Company
-      </h1>
-      <h2>Do whatever you want when you want to.</h2>
-      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
-    </div>
-
-  </div>
 
   <!--******     START CODING FROM HERE       *****-->
 
   <!--Below is a sample layout. You don't have to compulsorily use it-->
-  <div class="ui vertical stripe segment">
+  <div class="ui vertical stripe segment about">
     <div class="ui middle aligned stackable grid container">
       <div class="row">
-        <div class="eight wide column">
-          <h3 class="ui header">We Help Companies and Companions</h3>
-          <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-          <h3 class="ui header">We Make Bananas That Can Dance</h3>
-          <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
-        </div>
-        <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+          <div class="six wide column">
+              <img src="assets/images/featured.png" class="ui large image">
+         </div>
+        <div class="eight wide right floated column">
+          <h3 class="ui header">Who are We and What We Do</h3>
+            <div class="underlineHeader"></div>
+          <p>
+              We are a group of Open Source Enthusiasts who focus on something more preliminary and relevant, ”A Love
+              for Coding”.
+              Every year KOSS plans to hold events for familiarizing students with UNIX tools, Linux environment, Git
+              Development Workflow,
+              practice Algorithms and Data Structures, besides conducting workshops on GUI programming, Web development,
+              Android application Development and Hackathons.
+                <br /><br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius lacinia vestibulum. Aliquam loborti
+              s facilisis tellus, in facilisis ex vehicula ac. In malesuada quis turpis vel viverra. Praesent nec leo v
+              enenatis elit semper aliquet id ac enim. Maecenas nec mi leo. Etiam venenatis ut dui non hendrerit. Integer
+              dictum, diam vitae blandit accumsan, dolor odio tempus arcu, vel ultrices nisi nibh vitae ligula.
+              <br /><br />
+              Praesent nec leo venenatis elit semper aliquet id ac enim. Maecenas nec mi leo. Etiam venenatis ut dui no
+              n hendrerit. Integer dictum, diam vitae blandit accumsan, dolor odio tempus arcu, vel ultrices nisi nibh
+              vitae ligula.
+          </p>
         </div>
       </div>
       <div class="row">
         <div class="center aligned column">
-          <a class="ui huge button">Check Them Out</a>
+          <a class="ui huge secondary button">Know More About Us</a>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="ui vertical stripe quote segment">
-    <div class="ui equal width stackable internally celled grid">
-      <div class="center aligned row">
-        <div class="column">
-          <h3>"What a Company"</h3>
-          <p>That is what they all say about us</p>
-        </div>
-        <div class="column">
-          <h3>"I shouldn't have gone with their competitor."</h3>
-          <p>
-            <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="ui vertical stripe segment">
-    <div class="ui text container">
-      <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-      <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
-      <a class="ui large button">Read More</a>
-      <h4 class="ui horizontal header divider">
-        <a href="#">Case Studies</a>
-      </h4>
-      <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-      <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-      <a class="ui large button">I'm Still Quite Interested</a>
+  <div class="ui vertical stripe segment events inverted">
+      <div class="bg">RECENT <br/>EVENTS</div>
+      <div class="ui middle aligned stackable grid container">
+          <div class="ui container">
+              <h3 class="ui header centered">Recent Events</h3>
+          </div>
+            <p>Below is the list of our recent and upcoming events Praesent nec leo venenatis elit semper aliquet id ac
+                enim. Maecenas nec mi leo. Etiam venenatis ut dui non hendrerit. Integer dictum, diam vitae blandit accumsan,
+                dolor odio tempus arcu, vel ultrices nisi nibh vitae ligula.
+                <br /><br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius lacinia vestibulum. Aliquam loborti
+                s facilisis tellus, in facilisis ex vehicula ac. In malesuada quis turpis vel viverra. Praesent nec leo v
+                enenatis elit semper
+            </p>
+          <div class="ui container">
+              <div class="ui three column aligned stackable divided grid">
+                  <div class="column img-container">
+                      <img class="ui image" src="assets/images/1.jpg">
+                      <div class="caption">
+                          <div class="caption-text">Ubuntu Install Fest <i class="angle double right icon"></i></div>
+                      </div>
+                  </div>
+                  <div class="column img-container">
+                      <img class="ui image" src="assets/images/2.png">
+                      <div class="caption">
+                          <div class="caption-text">GSoC Seminar <i class="angle double right icon"></i></div>
+                      </div>
+                  </div>
+                  <div class="column img-container">
+                      <img class="ui image" src="assets/images/3.jpg">
+                      <div class="caption">
+                          <div class="caption-text">GSoC Seminar <i class="angle double right icon"></i></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
     </div>
   </div>
 
 
  <!--******     END YOUR CODE HERE      *****-->
+    <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+            <div class="ui stackable inverted divided grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Group 1</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Group 2</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Group 3</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Footer Header</h4>
+                    <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <img src="assets/images/kosslogo.png" class="ui centered mini image">
+            <div class="ui horizontal inverted small divided link list">
+                <a class="item" href="#">Site Map</a>
+                <a class="item" href="#">Contact Us</a>
+                <a class="item" href="#">Terms and Conditions</a>
+                <a class="item" href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!--****footer****-->
 
     <div id = "footer"><script src="./footer.js"></script></div>
 
