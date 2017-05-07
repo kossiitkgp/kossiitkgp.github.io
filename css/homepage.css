@@ -6,7 +6,7 @@
 .ui.large.secondary.inverted.pointing.menu {
     border: 0 none;
 }
-.ui.simple.dropdown.item {
+.masthead .ui.simple.dropdown.item {
     color: rgba(255, 255, 255, 0.7) !important;
 }
 
