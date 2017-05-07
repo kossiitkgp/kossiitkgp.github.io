@@ -66,8 +66,11 @@
             <h2>  </h2>
         </div>
     </div>
+    
+
 
     <!--******     START CODING FROM HERE       *****-->
+
 
 <div class="ui vertical stripe segment">
 <div class="ui middle aligned stackable grid container">
@@ -88,8 +91,20 @@
          </div>
          <div class="extra content">
            <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
-             <div class="ui basic blue button">Register</div>
+           <a class="ui basic green button" id="logIn">
+    		Details
+	   </a>
+	   <br><br>
+	   <div id="modaldiv" class="ui long modal">
+		 <iframe src="detail.html" width="900" height="500">
+		</iframe> 
+	   </div>
+           <script type="text/javascript">
+			  $('#logIn').click(function(){
+			    $('.fullscreen.modal').modal('show');    
+			  });
+           </script>
+           <div class="ui basic blue button">Register</div>
            </div>
          </div>
         </div>
