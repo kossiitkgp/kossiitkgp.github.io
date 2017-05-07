@@ -9,3 +9,8 @@
 .card{
 	border-radius: 15px !important;
 }
+
+.speak-head{
+	padding-top: 20px;
+	font-size: 3.5rem;
+}
