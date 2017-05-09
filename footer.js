@@ -33,7 +33,19 @@ document.write('\
                 </div>\
             </div>\
             <div class="ui inverted section divider"></div>\
+            ');
+        if (location.pathname == "/index.html")
+        {
+        document.write('\
             <img src="./assets/images/kosslogo.png" class="ui centered mini image">\
+            ');
+       }
+        else{
+            document.write('\
+            <img src="../assets/images/kosslogo.png" class="ui centered mini image" >\
+            ');
+        }
+        document.write('\
             <div class="ui horizontal inverted small divided link list">\
                 <a class="item" href="#">Site Map</a>\
                 <a class="item" href="#">Contact Us</a>\
