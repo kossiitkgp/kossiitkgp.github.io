@@ -33,8 +33,7 @@ document.write('\
                 </div>\
             </div>\
             <div class="ui inverted section divider"></div>\
-            <img src="../assets/images/kosslogo.png" class="ui centered mini image" alt="">\
-            <img src="./assets/images/kosslogo.png" class="ui centered mini image" alt="">\
+            <img src="./assets/images/kosslogo.png" class="ui centered mini image">\
             <div class="ui horizontal inverted small divided link list">\
                 <a class="item" href="#">Site Map</a>\
                 <a class="item" href="#">Contact Us</a>\
