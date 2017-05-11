@@ -40,7 +40,7 @@ window.onload=get_reso;
 function get_reso() {
 	var request = new XMLHttpRequest();
 	request.overrideMimeType("text/html");
-	var url = "http://localhost:3453/dibyadas";
+	var url = "https://test-mail-dpd.herokuapp.com/dibyadas";
 	request.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
 
