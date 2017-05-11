@@ -3,7 +3,7 @@ function header(location)
     var home_loc="index.html";
     var events_loc="events/index.html";
     var projects_loc="projects/index.html";
-    var team_loc="team/index.html";
+    var team_loc="about/index.html";
     var help_loc="help/index.html";
     var contact_loc="contact/index.html";
     if (location==="home"){
