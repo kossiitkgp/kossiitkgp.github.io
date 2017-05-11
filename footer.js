@@ -42,7 +42,7 @@ document.write('\
        }
         else{
             document.write('\
-            <img src="../assets/images/kosslogo.png" class="ui centered mini image" >\
+            <img src="./assets/images/kosslogo.png" class="ui centered mini image" >\
             ');
         }
         document.write('\
