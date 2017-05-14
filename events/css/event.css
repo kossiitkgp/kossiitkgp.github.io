@@ -14,3 +14,19 @@
 	padding-top: 20px;
 	font-size: 3.5rem;
 }
+
+.column.card-container{
+	 background-color: rgba(43, 43, 43, 1);
+}
+
+.ui.three.stackable.cards{
+	background-color: rgba(43, 43, 43, 1);
+}
+
+.description{
+	color: white;
+}
+
+.header{
+	color: wheat;
+}
