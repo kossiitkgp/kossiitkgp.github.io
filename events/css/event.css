@@ -8,9 +8,26 @@
 
 .card{
 	border-radius: 15px !important;
+	background-color: rgb(47,42,42);
 }
 
 .speak-head{
 	padding-top: 20px;
 	font-size: 3.5rem;
+}
+
+.column.card-container{
+	 background-color: rgba(43, 43, 43, 1);
+}
+
+.ui.three.stackable.cards{
+	background-color: rgba(43, 43, 43, 1);
+}
+
+.description{
+	color: white;
+}
+
+.header{
+	color: wheat;
 }
