@@ -10,7 +10,7 @@
 .masthead.aligned.segment {
     min-height: 1000px;
     padding: 1em 0;
-    background: #353336 url("../assets/images/back2.png") repeat scroll 0 0 / cover;
+    background: #353336 url("../assets/images/back1.jpg") repeat scroll 0 0 / cover;
     background-attachment: fixed;
 }
 
@@ -35,7 +35,7 @@
 .underlineHeader {
     width: 133px;
     height: 5px;
-    background-color: #428bca;
+    background-color: #fb0f51;
 }
 
 .ui.vertical.stripe .button + h3,

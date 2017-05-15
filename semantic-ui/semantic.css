@@ -11654,6 +11654,16 @@ img.ui.bordered.image {
   font-size: 1rem;
 }
 
+.ui.avg.images .image,
+.ui.avg.images img,
+.ui.avg.images svg,
+.ui.avg.image {
+  width: 400px;
+  height: auto;
+  font-size: 1rem;
+}
+
+
 .ui.large.images .image,
 .ui.large.images img,
 .ui.large.images svg,
