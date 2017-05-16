@@ -14,12 +14,13 @@
   <link rel="stylesheet" type="text/css" href="../css/homepage.css">
   <link rel="stylesheet" type="text/css" href="css/event.css">
   <link rel="icon" href="assets/images/kosslogo.png">
-  <script src="assets/library/jquery.min.js"></script>
-  <script src="semantic-ui/visibility.js"></script>
-  <script src="semantic-ui/sidebar.js"></script>
-  <script src="semantic-ui/transition.js"></script>
+  <script src="../assets/library/jquery.min.js"></script>
+  <script src="../semantic-ui/visibility.js"></script>
+  <script src="../semantic-ui/sidebar.js"></script>
+  <script src="../semantic-ui/transition.js"></script>
   <script src="../js/homepage.js"></script>
   <script src="../header.js"></script>
+  <script src="js/event.js"></script>
 </head>
 <body>
 
@@ -50,18 +51,21 @@
 
 <!-- Page Contents -->
 <div class="pusher">
-  <div class="ui inverted vertical masthead center aligned segment">
-
+  <div class="ui inverted vertical masthead center aligned segment" >
+    <div class="ui container">
+      <div class="ui text container">
+            <div class="page-name">KWOC</div>
+            <div class="hn2">Kharagpur Winter of Code.</div>
+      </div>
+      <br><br><br><br>
+      <h2 style="float: left;">1st to 31st December</h2>
+      <br><br><br><br>
+      <h2 style="float: left;">Contribute from where you are.</h2>
+      <br><br><br><br>
+      <h2 style="float: left;">XX+ Projects with YYY+ Participants.</h2>
+    </div> 
    
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        Kharagpur Winter Of Code
-      </h1>
-      <hr>
-      <h2 style="float: left">1st to 31st December</h2>
-      
-    </div>
-
+    
   </div>
 
   <!--******     START CODING FROM HERE       *****-->
@@ -78,9 +82,19 @@ for the students of IIT Kharagpur, who are new to open source software developme
          
           <div class="ui huge primary button" style="margin-top:40px;" href="http://kwoc.kossiitkgp.in/resources">Checkout the Resources <i class="right arrow icon"></i></div>
         </div>
-        <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
-        </div>
+      <div class="eight wide right floated column">
+         <h2 class="slide-center">Manual Slideshow</h2>
+
+         <div class="slide-content slide-display-container">
+          <img class="mySlides" src="https://www.w3schools.com/w3css/img_fjords.jpg" style="width:100%">
+          <img class="mySlides" src="https://www.w3schools.com/w3css/img_lights.jpg" style="width:100%">
+          <img class="mySlides" src="https://www.w3schools.com/w3css/img_mountains.jpg" style="width:100%">
+          <img class="mySlides" src="https://www.w3schools.com/w3css/img_forest.jpg" style="width:100%">
+
+            <button class="slider-button slider-black btn-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="slider-button slider-black btn-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+      </div>
       </div>
      
     </div>
@@ -125,8 +139,6 @@ for the students of IIT Kharagpur, who are new to open source software developme
  <!--******     END YOUR CODE HERE      *****-->
 
     <!--****footer****-->
-
-    <div id = "footer"><script src="./footer.js"></script></div>
 
     
 </body>
