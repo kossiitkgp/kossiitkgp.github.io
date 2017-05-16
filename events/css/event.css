@@ -14,3 +14,34 @@
 	padding-top: 20px;
 	font-size: 3.5rem;
 }
+
+.ui.cards{
+	margin: 2.125em -3.5em;
+}
+
+.ui.three.stackable.cards{
+	margin: -1em -3.5em;
+}
+
+.ui.vertical.stripe{
+	padding: 2em 0 3em;
+}
+
+.ui.divider{
+	margin: 0rem 0rem;
+}
+
+.page-name{
+    padding-top: 100px;
+    font-size: 80px;
+}
+.description-brief{
+    font-size: 30px;
+    text-align: center;
+}
+
+.ui .center .aligned .blue .header{
+   color: blue;
+   font-size: 40px;
+   text-align: center;
+}
