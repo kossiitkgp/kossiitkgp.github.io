@@ -14,19 +14,20 @@
 	<link rel="stylesheet" href="https://www.kevinleary.net/wp-content/themes/kevinleary.net/assets/css/team.css?ver=4.7.4">
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 	<link rel='https://api.w.org/' href='wp-json/index.html' />
-	
-  <link rel="stylesheet" type="text/css" href="../semantic-ui/semantic.css">
-  <link rel="stylesheet" type="text/css" href="../css/homepage.css">
-  <link rel="icon" href="../assets/images/kosslogo.png">
-	
-	
-  <script src="../assets/library/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../semantic-ui/semantic.css">
+    <link rel="stylesheet" type="text/css" href="../css/homepage.css">
+
+    <script src="../assets/library/jquery.min.js"></script>
+    <script src="../semantic-ui/semantic.js"></script>
+    <script src="../header.js"></script>
   <script src="../semantic-ui/visibility.js"></script>
   <script src="../semantic-ui/sidebar.js"></script>
   <script src="../semantic-ui/transition.js"></script>
   <script src="../js/homepage.js"></script>
   <script src="../header.js"></script>
-  <style>
+  
+   <style>
   .masthead.aligned.segment {
     min-height: 500px;
     padding: 1em 0;
@@ -44,10 +45,27 @@
     font-weight: lighter;
     font-style: italic;
       }
+
+.page-name{
+    padding-top: 100px;
+    font-size: 80px;
+}
+.description-brief{
+    font-size: 30px;
+    text-align: center;
+}
+
+.ui .center .aligned .blue .header{
+   color: blue;
+   font-size: 40px;
+   text-align: center;
+}
   </style>
+
 </head>
 <body>
 
+<!
 <!-- Following Menu -->
 
 <div class="ui large top menu hidden fixed">
@@ -68,7 +86,7 @@
 
 <!-- Page Contents -->
 <div class="pusher">
- <div class="ui inverted vertical masthead center aligned segment">
+ <div class="ui inverted vertical masthead center aligned segment" style="height: 972px;">
 
 
      <div class="ui container">
@@ -81,13 +99,19 @@
              </a>
              </div>
          </div>
-      <div class="ui text container">
-            <div class="hn1">About Us</div>
-        </div>
+     <div class="ui text container">
+            <div class="page-name">About Us</div>
+            <div class="hn2">A curated collection of open source projects which are contributed and maintained by our different members.</div>
+         </div>
      </div>
+          <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="elementor-shape-fill" d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9">
+                </path>
+            </svg>
      </div>
-     
-    <!--******     START CODING FROM HERE       *****-->
+ </div>
+    
 
     <!--******     START CODING FROM HERE       *****-->
  <div class="ui vertical stripe segment about">
