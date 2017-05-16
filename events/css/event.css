@@ -30,3 +30,18 @@
 .ui.divider{
 	margin: 0rem 0rem;
 }
+
+.page-name{
+    padding-top: 100px;
+    font-size: 80px;
+}
+.description-brief{
+    font-size: 30px;
+    text-align: center;
+}
+
+.ui .center .aligned .blue .header{
+   color: blue;
+   font-size: 40px;
+   text-align: center;
+}
