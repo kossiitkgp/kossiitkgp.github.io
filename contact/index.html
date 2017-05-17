@@ -151,7 +151,9 @@
                             
                         }
                         else{
-                            return false;
+                            document.getElementById('flag').innerHTML = "Not Sent! Verify Captcha again";
+                            grecaptcha.reset();
+                            document.getElementById('button').setAttribute("class","ui huge button");
                         }
                       }
                     };
