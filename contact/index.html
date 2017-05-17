@@ -61,7 +61,7 @@
 </head>
 <body>
 
-<!
+
 <!-- Following Menu -->
 
 <div class="ui large top menu hidden fixed">
@@ -112,12 +112,12 @@
 
     <script type="text/javascript">
         function send(form) {
-                     document.getElementById('flag').innerHTML = "";
-                if(validate()){
-                    document.getElementById('loading-flag').setAttribute("class","ui active inverted dimmer");
+                document.getElementById('flag').innerHTML = "";
+                document.getElementById('captcha-flag').innerHTML = '';
+                   
                     var request = new XMLHttpRequest();
                     var data = new FormData(form);
-                    var url = "https://test-mail-dpd.herokuapp.com/mail"
+                    var url = "https://test-mail-dpd.herokuapp.com/mail";
                     request.onreadystatechange = function() {
                     console.log(request.readyState);
                     console.log(request.status);
@@ -125,20 +125,58 @@
                   if (request.readyState === 4) {
                         if (request.status === 200) {
                                 document.getElementById('flag').innerHTML = "Sent!";
-                                document.getElementById('loading-flag').removeAttribute("class");
+                                document.getElementById('button').setAttribute("class","ui huge button");
                             } else {
                                 document.getElementById('flag').innerHTML = "Not Sent!";
-                                document.getElementById('loading-flag').removeAttribute("class");
+                                document.getElementById('button').setAttribute("class","ui huge button");
                             }
                         }
                     };  
                     request.open("POST", url , true);
                     request.send(data);
-                }
-                    else{
-                        return false;
-                    }
+      
                 }       
+
+        function captcha_verify(form){
+                  if(validate() && capcheck()){
+                    var request = new XMLHttpRequest();
+                    var data = grecaptcha.getResponse();
+                    var url = "https://test-mail-dpd.herokuapp.com/captcha";
+                     document.getElementById('button').setAttribute("class","ui huge loading button");
+                    request.onreadystatechange = function() {
+                      if (request.readyState === 4) {
+                        if (request.status === 200) {
+                            send(form);    
+                            return true;
+                            
+                        }
+                        else{
+                            return false;
+                        }
+                      }
+                    };
+                    request.open("POST",url,true);
+                    request.send(JSON.stringify(
+                      { "key" :"6Lc9kyEUAAAAACRUHaLUbzAgDVeiaUxitwK3-nc0",
+                        "gcaptcha" : data
+                      }));
+                    }
+                  // return true;
+                  //           
+        }
+
+        function capcheck() { 
+                  var data = grecaptcha.getResponse();
+                  if (data != '') {
+                    return true;
+                  } else {
+                    document.getElementById('captcha-flag').innerHTML = '<font color="red">Please verfiy captcha!</font>';
+                    return false;
+                  }
+        }
+
+
+
 
         function validate(){
             var flag = 0;
@@ -171,12 +209,11 @@
                } else {
                 return true;
                }
-
-
         }
 
     </script>
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!--Below is a sample layout. You don't have to compulsorily use it-->
     <div class="ui vertical stripe segment">
@@ -215,15 +252,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="center aligned column">
-                    <a class="ui huge button" onclick="send(form)">Submit</a>
-                    <label id="flag">   
+                <div class="eight wide right aligned column">
+                    <a class="ui huge button" id="button" onclick="captcha_verify(form)">Submit
+                     </a>
+                  </div>
+                  <div class="eight wide left aligned column">
+                    <div class="g-recaptcha" data-sitekey="6Lc9kyEUAAAAAH0OekW2_FZJj2A3XTTlakPg1xZO"></div>
+                    <label id="flag" >
                     </label>
-                    <div class="" id="loading-flag">
-                    <div class="ui loader">        
-                    </div>
-                    </div>
-                </div>
+                    <label id="captcha-flag"></label>
+                    </div>    
+                
             </div>
         </div>
     </div>
