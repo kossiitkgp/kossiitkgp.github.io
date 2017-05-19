@@ -14,12 +14,12 @@
     <link rel="stylesheet" type="text/css" href="../semantic-ui/semantic.css">
     <link rel="stylesheet" type="text/css" href="../css/homepage.css">
     <link rel="stylesheet" type="text/css" href="css/event.css" >
-
+    <link rel="icon" href="../assets/images/kosslogo.png">
     <script src="../assets/library/jquery.min.js"></script>
     <script src="../semantic-ui/semantic.js"></script>
     <script src="../header.js"></script>
   <script src="../semantic-ui/visibility.js"></script>
-  <script src="../semantic-ui/sidebar.js"></script>
+  <script src="semantic-ui/sidebar.js"></script>
   <script src="../semantic-ui/transition.js"></script>
   <script src="../js/homepage.js"></script>
   <script src="../header.js"></script>
@@ -139,30 +139,18 @@
     		Details
 	   </a>
 	   <br><br>
-	   <div id="modaldiv" class="ui modal">
-	     <i class="close icon"></i>		 
-		<div>
-		    <div id="iframe-wrapper" align="center" style="z-index: 0">
-			<iframe id="external" src="detail.html"></iframe>
-		    </div>   
-		</div>
+	   <div id="modaldiv" class="ui modal" style="width: 1200px !important;">
+	     <span class="close">&times;</span>
+		    <div>
+		      <div id="iframe-wrapper" align="center" style="z-index: 0">
+			     <iframe id="external" src="detail.html"></iframe>
+		      </div>   
+		    </div>
 	   </div>
            <script type="text/javascript">
-			  $('#logIn').click(function(){
-			    $('.modal').modal('setting', {
-				    onShow : function () {
-					$(this).css({
-					    'margin' : '0px',
-					    'position' : 'fixed',
-					    'top' : '0px',
-					    'bottom' : '0',
-					    'left' : '0',
-					    'right' : '0',
-					    'width' : 'auto'
-					});
-				    }
-				  }).modal('show');     
-			  });
+			        $('#logIn').click(function(){
+			                $('.modal').modal('show');     
+			              });
            </script>
            <div class="ui basic blue button">Register</div>
            </div>
@@ -193,23 +181,7 @@
 		    </div>   
 		</div>
 	   </div>
-           <script type="text/javascript">
-			  $('#logIn').click(function(){
-			    $('.modal').modal('setting', {
-				    onShow : function () {
-					$(this).css({
-					    'margin' : '0px',
-					    'position' : 'fixed',
-					    'top' : '0px',
-					    'bottom' : '0',
-					    'left' : '0',
-					    'right' : '0',
-					    'width' : 'auto'
-					});
-				    }
-				  }).modal('show');     
-			  });
-           </script>
+          
            <div class="ui basic blue button">Register</div>
            </div>
          </div>
