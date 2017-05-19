@@ -14,12 +14,12 @@
     <link rel="stylesheet" type="text/css" href="../semantic-ui/semantic.css">
     <link rel="stylesheet" type="text/css" href="../css/homepage.css">
     <link rel="stylesheet" type="text/css" href="css/event.css" >
-    <link rel="icon" href="../assets/images/kosslogo.png">
+
     <script src="../assets/library/jquery.min.js"></script>
     <script src="../semantic-ui/semantic.js"></script>
     <script src="../header.js"></script>
   <script src="../semantic-ui/visibility.js"></script>
-  <script src="semantic-ui/sidebar.js"></script>
+  <script src="../semantic-ui/sidebar.js"></script>
   <script src="../semantic-ui/transition.js"></script>
   <script src="../js/homepage.js"></script>
   <script src="../header.js"></script>
@@ -43,20 +43,20 @@
     font-style: italic;
       }
   </style>
-	<script>
+  <script>
 
-		// set initial size
-		$( document ).ready(SetIframeSize);
+    // set initial size
+    $( document ).ready(SetIframeSize);
 
-		// resize on window resize
-		$(window).on('resize', SetIframeSize);
+    // resize on window resize
+    $(window).on('resize', SetIframeSize);
 
-		function SetIframeSize(){
-		    $("#external").width($(window).width() - 18); // added margin for scrollbars
-		    $("#external").height($(window).height() - 35);
-		}
+    function SetIframeSize(){
+        $("#external").width($(window).width() - 18); // added margin for scrollbars
+        $("#external").height($(window).height() - 35);
+    }
 
-	</script>
+  </script>
 
 </head>
 <body>
@@ -136,21 +136,33 @@
          <div class="extra content">
            <div class="ui two buttons">
            <a class="ui basic green button" id="logIn">
-    		Details
-	   </a>
-	   <br><br>
-	   <div id="modaldiv" class="ui modal" style="width: 1200px !important;">
-	     <span class="close">&times;</span>
-		    <div>
-		      <div id="iframe-wrapper" align="center" style="z-index: 0">
-			     <iframe id="external" src="detail.html"></iframe>
-		      </div>   
-		    </div>
-	   </div>
+        Details
+     </a>
+     <br><br>
+     <div id="modaldiv" class="ui modal">
+       <i class="close icon"></i>    
+    <div>
+        <div id="iframe-wrapper" align="center" style="z-index: 0">
+      <iframe id="external" src="detail.html"></iframe>
+        </div>   
+    </div>
+     </div>
            <script type="text/javascript">
-			        $('#logIn').click(function(){
-			                $('.modal').modal('show');     
-			              });
+        $('#logIn').click(function(){
+          $('.modal').modal('setting', {
+            onShow : function () {
+          $(this).css({
+              'margin' : '0px',
+              'position' : 'fixed',
+              'top' : '0px',
+              'bottom' : '0',
+              'left' : '0',
+              'right' : '0',
+              'width' : 'auto'
+          });
+            }
+          }).modal('show');     
+        });
            </script>
            <div class="ui basic blue button">Register</div>
            </div>
@@ -170,18 +182,34 @@
          <div class="extra content">
            <div class="ui two buttons">
            <a class="ui basic green button" id="logIn">
-    		Details
-	   </a>
-	   <br><br>
-	   <div id="modaldiv" class="ui modal">
-	     <i class="close icon"></i>		 
-		<div>
-		    <div id="iframe-wrapper" align="center" style="z-index: 0">
-			<iframe id="external" src="detail.html"></iframe>
-		    </div>   
-		</div>
-	   </div>
-          
+        Details
+     </a>
+     <br><br>
+     <div id="modaldiv" class="ui modal">
+       <i class="close icon"></i>    
+    <div>
+        <div id="iframe-wrapper" align="center" style="z-index: 0">
+      <iframe id="external" src="detail.html"></iframe>
+        </div>   
+    </div>
+     </div>
+           <script type="text/javascript">
+        $('#logIn').click(function(){
+          $('.modal').modal('setting', {
+            onShow : function () {
+          $(this).css({
+              'margin' : '0px',
+              'position' : 'fixed',
+              'top' : '0px',
+              'bottom' : '0',
+              'left' : '0',
+              'right' : '0',
+              'width' : 'auto'
+          });
+            }
+          }).modal('show');     
+        });
+           </script>
            <div class="ui basic blue button">Register</div>
            </div>
          </div>
@@ -200,33 +228,33 @@
          <div class="extra content">
            <div class="ui two buttons">
            <a class="ui basic green button" id="logIn">
-    		Details
-	   </a>
-	   <br><br>
-	   <div id="modaldiv" class="ui modal">
-	     <i class="close icon"></i>		 
-		<div>
-		    <div id="iframe-wrapper" align="center" style="z-index: 0">
-			<iframe id="external" src="detail.html"></iframe>
-		    </div>   
-		</div>
-	   </div>
+        Details
+     </a>
+     <br><br>
+     <div id="modaldiv" class="ui modal">
+       <i class="close icon"></i>    
+    <div>
+        <div id="iframe-wrapper" align="center" style="z-index: 0">
+      <iframe id="external" src="detail.html"></iframe>
+        </div>   
+    </div>
+     </div>
            <script type="text/javascript">
-			  $('#logIn').click(function(){
-			    $('.modal').modal('setting', {
-				    onShow : function () {
-					$(this).css({
-					    'margin' : '0px',
-					    'position' : 'fixed',
-					    'top' : '0px',
-					    'bottom' : '0',
-					    'left' : '0',
-					    'right' : '0',
-					    'width' : 'auto'
-					});
-				    }
-				  }).modal('show');     
-			  });
+        $('#logIn').click(function(){
+          $('.modal').modal('setting', {
+            onShow : function () {
+          $(this).css({
+              'margin' : '0px',
+              'position' : 'fixed',
+              'top' : '0px',
+              'bottom' : '0',
+              'left' : '0',
+              'right' : '0',
+              'width' : 'auto'
+          });
+            }
+          }).modal('show');     
+        });
            </script>
            <div class="ui basic blue button">Register</div>
            </div>
@@ -246,33 +274,33 @@
          <div class="extra content">
            <div class="ui two buttons">
            <a class="ui basic green button" id="logIn">
-    		Details
-	   </a>
-	   <br><br>
-	   <div id="modaldiv" class="ui modal">
-	     <i class="close icon"></i>		 
-		<div>
-		    <div id="iframe-wrapper" align="center" style="z-index: 0">
-			<iframe id="external" src="detail.html"></iframe>
-		    </div>   
-		</div>
-	   </div>
+        Details
+     </a>
+     <br><br>
+     <div id="modaldiv" class="ui modal">
+       <i class="close icon"></i>    
+    <div>
+        <div id="iframe-wrapper" align="center" style="z-index: 0">
+      <iframe id="external" src="detail.html"></iframe>
+        </div>   
+    </div>
+     </div>
            <script type="text/javascript">
-			  $('#logIn').click(function(){
-			    $('.modal').modal('setting', {
-				    onShow : function () {
-					$(this).css({
-					    'margin' : '0px',
-					    'position' : 'fixed',
-					    'top' : '0px',
-					    'bottom' : '0',
-					    'left' : '0',
-					    'right' : '0',
-					    'width' : 'auto'
-					});
-				    }
-				  }).modal('show');     
-			  });
+        $('#logIn').click(function(){
+          $('.modal').modal('setting', {
+            onShow : function () {
+          $(this).css({
+              'margin' : '0px',
+              'position' : 'fixed',
+              'top' : '0px',
+              'bottom' : '0',
+              'left' : '0',
+              'right' : '0',
+              'width' : 'auto'
+          });
+            }
+          }).modal('show');     
+        });
            </script>
            <div class="ui basic blue button">Register</div>
            </div>
@@ -309,7 +337,7 @@
          </div>
          <div class="extra content">
            <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
+             <a href="MakerParty.html " class="ui basic green button">Details</a>
            </div>
          </div>
         </div>
@@ -328,7 +356,7 @@
          </div>
          <div class="extra content">
            <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
+             <a href ="androidWorkshop.html" class="ui basic green button">Details</a>
            </div>
          </div>
         </div>
@@ -341,12 +369,13 @@
             <div class="meta">
             </div>
             <div class="description">
-            Polymer is a new material design web element library. It leverages existing HTML and CSS but makes it simpler to use material design. 
+            To build up a good community to contribute to Mozilla, KOSS (erstwhile IIT Kharagpur Firefox Club) organized its first Event MozSetup@IIT KGP
+            It was a two day event
             </div>
          </div>
          <div class="extra content">
            <div class="ui two buttons">
-             <a href="gsocseminar.html"<div class="ui basic green button">Details</div></a>
+             <a href="mozSetup.html"<div class="ui basic green button">Details</div></a>
            </div>
          </div>
         </div>
@@ -500,5 +529,4 @@
 </body>
 
 </html>
-
 
