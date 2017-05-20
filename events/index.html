@@ -14,12 +14,12 @@
     <link rel="stylesheet" type="text/css" href="../semantic-ui/semantic.css">
     <link rel="stylesheet" type="text/css" href="../css/homepage.css">
     <link rel="stylesheet" type="text/css" href="css/event.css" >
-    <link rel="icon" href="../assets/images/kosslogo.png">
+
     <script src="../assets/library/jquery.min.js"></script>
     <script src="../semantic-ui/semantic.js"></script>
     <script src="../header.js"></script>
   <script src="../semantic-ui/visibility.js"></script>
-  <script src="semantic-ui/sidebar.js"></script>
+  <script src="../semantic-ui/sidebar.js"></script>
   <script src="../semantic-ui/transition.js"></script>
   <script src="../js/homepage.js"></script>
   <script src="../header.js"></script>
@@ -43,20 +43,20 @@
     font-style: italic;
       }
   </style>
-	<script>
+  <script>
 
-		// set initial size
-		$( document ).ready(SetIframeSize);
+    // set initial size
+    $( document ).ready(SetIframeSize);
 
-		// resize on window resize
-		$(window).on('resize', SetIframeSize);
+    // resize on window resize
+    $(window).on('resize', SetIframeSize);
 
-		function SetIframeSize(){
-		    $("#external").width($(window).width() - 18); // added margin for scrollbars
-		    $("#external").height($(window).height() - 35);
-		}
+    function SetIframeSize(){
+        $("#external").width($(window).width() - 18); // added margin for scrollbars
+        $("#external").height($(window).height() - 35);
+    }
 
-	</script>
+  </script>
 
 </head>
 <body>
@@ -151,6 +151,7 @@
 			        $('#logIn').click(function(){
 			                $('.modal').modal('show');
 			              });
+
            </script>
            <div class="ui basic blue button">Register</div>
            </div>
@@ -227,6 +228,7 @@
 				    }
 				  }).modal('show');
 			  });
+
            </script>
            <div class="ui basic blue button">Register</div>
            </div>
@@ -310,7 +312,7 @@
          <div class="extra content">
              <a href="maker.html">
            <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
+             <a href="MakerParty.html " class="ui basic green button">Details</a>
            </div>
              </a>
          </div>
@@ -332,7 +334,7 @@
          <div class="extra content">
              <a href="appliedcs.html">
            <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
+             <a href ="androidWorkshop.html" class="ui basic green button">Details</a>
            </div>
                  </a>
          </div>
@@ -353,6 +355,7 @@
              <a href="moz.html">
            <div class="ui two buttons">
              <div class="ui basic green button">Details</div>
+
            </div>
             </a>
          </div>
