@@ -37,12 +37,12 @@ document.write('\
         if (location.pathname == "/index.html")
         {
         document.write('\
-            <img src="./assets/images/kosslogo.png" class="ui centered mini image">\
+            <a href="index.html"><img src="./assets/images/kosslogo.png" class="ui centered mini image"></a>\
             ');
        }
         else{
             document.write('\
-            <img src="../assets/images/kosslogo.png" class="ui centered mini image" >\
+            <a href="../index.html"><img src="../assets/images/kosslogo.png" class="ui centered mini image" ></a>\
             ');
         }
         document.write('\
