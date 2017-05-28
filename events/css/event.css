@@ -102,7 +102,7 @@ overflow: hidden;
 .masthead.aligned.segment {
     min-height: 700px;
     padding: 1em 0;
-    background: #353336 url("../images/bkg.png") repeat scroll 0 0 / cover;
+    background: #353336 url("../images/bkg.jpg") repeat scroll 0 0 / cover;
     background-attachment: fixed;
 }
 
