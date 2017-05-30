@@ -14,7 +14,7 @@
 
 .cards li {
   flex: 1 1 400px;
-  height:250px;
+  height:300px;
 }
 
 
@@ -32,7 +32,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 20px;
+  grid-gap: 30px;
 }
 
 .view {
@@ -42,28 +42,31 @@
   overflow: hidden;
   position: relative;
   text-align: center;
-  box-shadow: 2px 2px 5px #e6e6e6;
+  box-shadow: 6px 6px 3px #e6e6e6;
+  border:1px solid black;
+  border-radius:5px;
   cursor: default;
-  background: #fff url(../images/bgimg.jpg) no-repeat center center fixed;
+  width:90%;
+  height:90%;
+  background: #fff no-repeat center center fixed;
   background-size:cover;
 }
-.view img{
-  height:200px;
-  width:300px;
-}
+
 .view .mask,
 .view .content {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   overflow: hidden;
   top: 0;
-  left: 0
+  left: 0;
 }
 
 .view img {
   display: block;
-  position: relative
+  position: relative;
+  top:20%;
+  left:25%;
 }
 
 .view h2 {
@@ -73,19 +76,24 @@
   position: relative;
   font-size: 17px;
   font-family: Raleway, serif;
-  padding: 10px;
-  /*background: rgba(0, 0, 0, 0.8);*/
-  margin: 20px 0 0 0
+  padding: 15px;
+  margin: 20px 0 0 0;
 }
-
+h1{
+  text-transform: uppercase;
+  position:relative;
+  top:20%;
+  font-size:20px;
+  font-family: Raleway, serif;
+}
 .view p {
   font-family: Merriweather, serif;
   font-style: italic;
   font-size: 14px;
   position: relative;
   color: #fff;
-  padding: 0px 20px 0px;
-  text-align: center
+  padding: 15px 20px 0px;
+  text-align: center;
 }
 
 .view a.info {
@@ -96,14 +104,14 @@
   color: #fff;
   font-family: Raleway, serif;
   text-transform: uppercase;
-  box-shadow: 0 0 1px #000
+  box-shadow: 0 0 1px #000;
 }
 
 .view a.info:hover {
-  box-shadow: 0 0 5px #000
+  box-shadow: 0 0 5px #000;
 }
 
-.view-tenth img {
+.view-tenth .content {
   transform: scaleY(1);
   transition: all .7s ease-in-out;
 }
@@ -129,7 +137,6 @@
   opacity: 0;
   transform: scale(0);
   transition: all 0.5s linear;
-  padding-
 }
 
 .view-tenth a.info {
@@ -138,7 +145,7 @@
   transition: all 0.5s linear;
 }
 
-.view-tenth:hover img {
+.view-tenth:hover .content {
   -webkit-transform: scale(10);
   transform: scale(10);
   opacity: 0;
