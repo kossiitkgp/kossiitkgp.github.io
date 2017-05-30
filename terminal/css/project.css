@@ -1,156 +1,64 @@
-.wrapper {
-  margin: 0 auto;
-  width: 82%;
-  margin-top:5%;
-  margin-bottom:5%;
-}
-
-.cards {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-}
-
-.cards li {
-  flex: 1 1 400px;
-  height:250px;
-}
-
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px;
-}
-
-.flex li {
-  flex: 1 1 500px;
-  margin: 10px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 20px;
-}
-
-.view {
-  margin: 10px;
-  float: left;
-  border: 10px solid #fff;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  box-shadow: 2px 2px 5px #e6e6e6;
-  cursor: default;
-  background: #fff url(../images/bgimg.jpg) no-repeat center center fixed;
-  background-size:cover;
-}
-.view img{
-  height:200px;
-  width:300px;
-}
-.view .mask,
-.view .content {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0
-}
-
-.view img {
-  display: block;
-  position: relative
-}
-
-.view h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  font-family: Raleway, serif;
-  padding: 10px;
-  /*background: rgba(0, 0, 0, 0.8);*/
-  margin: 20px 0 0 0
-}
-
-.view p {
-  font-family: Merriweather, serif;
-  font-style: italic;
-  font-size: 14px;
-  position: relative;
-  color: #fff;
-  padding: 0px 20px 0px;
-  text-align: center
-}
-
-.view a.info {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  background: #000;
-  color: #fff;
-  font-family: Raleway, serif;
-  text-transform: uppercase;
-  box-shadow: 0 0 1px #000
-}
-
-.view a.info:hover {
-  box-shadow: 0 0 5px #000
-}
-
-.view-tenth img {
-  transform: scaleY(1);
-  transition: all .7s ease-in-out;
-}
-
-.view-tenth .mask {
-  background-color: rgba(255, 231, 179, 0.3);
-  transition: all 0.5s linear;
-  opacity: 0;
-}
-
-.view-tenth h2 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  background: transparent;
-  margin: 20px 40px 0px 40px;
-  transform: scale(0);
-  color: #333;
-  transition: all 0.5s linear;
-  opacity: 0;
-}
-
-.view-tenth p {
-  color: #333;
-  opacity: 0;
-  transform: scale(0);
-  transition: all 0.5s linear;
-  padding-
-}
-
-.view-tenth a.info {
-  opacity: 0;
-  transform: scale(0);
-  transition: all 0.5s linear;
-}
-
-.view-tenth:hover img {
-  -webkit-transform: scale(10);
-  transform: scale(10);
-  opacity: 0;
-}
-
-.view-tenth:hover .mask {
-  opacity: 1;
-}
-
-.view-tenth:hover h2,
-.view-tenth:hover p,
-.view-tenth:hover a.info {
-  transform: scale(1);
-  opacity: 1;
-}
+.btn{
+		background: -webkit-linear-gradient(top, #f79477 0%,#d94c1b 100%);
+		background:    -moz-linear-gradient(top, #f79477 0%,#d94c1b 100%);
+		background:      -o-linear-gradient(top, #f79477 0%,#d94c1b 100%);
+		width: 15px;
+		height: 15px;
+		display: block;
+		border-radius: 100px;
+		box-shadow:0px 0px 1px 0px #41403A,0px 1px 1px 0px #474642;
+		color:#3e3d39;
+		text-decoration: none;
+		text-shadow:0px 1px 0px rgba(255,255,255,0.2);
+		font-size: 11px;
+		text-align: center;
+		float: left;
+		margin:0px 1px;
+		line-height: 13px;
+	}
+	.btn:hover{
+		background: -webkit-linear-gradient(top, #feae97 0%,#d74e1f 100%);
+		background:    -moz-linear-gradient(top, #feae97 0%,#d74e1f 100%);
+		background:      -o-linear-gradient(top, #feae97 0%,#d74e1f 100%);
+	}
+	.stnd{
+		background: -webkit-linear-gradient(top, #908f8a 0%,#595953 100%);
+		background:    -moz-linear-gradient(top, #908f8a 0%,#595953 100%);
+		background:      -o-linear-gradient(top, #908f8a 0%,#595953 100%);
+	}
+	.stnd:hover{
+		background: -webkit-linear-gradient(top, #cbcbcb 0%,#949494 100%);
+		background:    -moz-linear-gradient(top, #cbcbcb 0%,#949494 100%);
+		background:      -o-linear-gradient(top, #cbcbcb 0%,#949494 100%);
+	}
+	.head{
+		background: -webkit-linear-gradient(top, #4d4c47 0%,#3c3b37 100%);
+		background:    -moz-linear-gradient(top, #4d4c47 0%,#3c3b37 100%);
+		background:      -o-linear-gradient(top, #4d4c47 0%,#3c3b37 100%);
+		box-shadow: 0px 2px 0px #575757 inset;
+		height: 30px;
+		padding: 5px;
+		border-radius: 8px 8px 0px 0px;
+	}
+	.head span{
+		font-size: 15px;
+		color:#fff;
+		font-weight: bold;
+		text-shadow:0px -1px 0px #333;
+		margin-left: 10px;
+	}
+	.max{
+		line-height: 12px;
+		text-indent: 0.3px;
+	}
+	.window{
+		border:1px solid #eaeaea;
+		border-top:none;
+		border-radius: 8px 8px 0px 0px;
+		min-height: 500px;
+		width: 750px;
+		margin:0px auto;
+    margin-bottom: 40px;
+		background: #000;
+		box-shadow: 0px 3px 20px #333;
+	}
