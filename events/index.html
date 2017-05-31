@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="../semantic-ui/semantic.css">
     <link rel="stylesheet" type="text/css" href="../css/homepage.css">
     <link rel="stylesheet" type="text/css" href="css/event.css" >
-
+    <link rel="icon" href="../assets/images/kosslogo.png">
     <script src="../assets/library/jquery.min.js"></script>
     <script src="../semantic-ui/semantic.js"></script>
     <script src="../header.js"></script>
@@ -44,7 +44,6 @@
       }
   </style>
   <script>
-
     // set initial size
     $( document ).ready(SetIframeSize);
 
@@ -52,10 +51,9 @@
     $(window).on('resize', SetIframeSize);
 
     function SetIframeSize(){
-        $("#external").width($(window).width() - 18); // added margin for scrollbars
-        $("#external").height($(window).height() - 35);
+        $(".external").width($(window).width() - 30); // added margin for scrollbars
+        $(".external").height($(window).height() - 35);
     }
-
   </script>
 
 </head>
@@ -123,7 +121,7 @@
   <h1 class="ui center aligned blue header">
     Recent Events
   </h1>
-<div class="ui middle aligned stackable grid container">
+<div class="ui middle aligned stackable grid container" style="margin-bottom:5em;">
     <div class="column card-container">
     <div class="ui cards">
         <div class="card">
@@ -136,29 +134,26 @@
              Kharagpur Winter Of Code.
             </div>
             <div class="description">
-             Brief description here.
+              Kharagpur Winter of Code is a 5-week long online program for the students
+              of IIT Kharagpur, who are new to open source software development. The
+               program will not only help students to get involved in open source,
+               but will also prep them for many open source summer programs.
             </div>
          </div>
          <div class="extra content">
            <div class="ui two buttons">
-           <a class="ui basic green button" id="logIn">
+           <a class="ui basic green button" id="logIn1">
     		Details
 	   </a>
 	   <br><br>
-	   <div id="modaldiv" class="ui modal" style="width: 1200px !important;">
-	     <span class="close">&times;</span>
-		    <div>
-		      <div id="iframe-wrapper" align="center" style="z-index: 0">
-			     <iframe id="external" src="detail.html"></iframe>
-		      </div>
-		    </div>
-	   </div>
-           <script type="text/javascript">
-			        $('#logIn').click(function(){
-			                $('.modal').modal('show');
-			              });
-
-           </script>
+     <div id="modaldiv1" class="ui modal" style="width: 1200px !important;">
+      <span class="close">&times;</span>
+       <div>
+         <div class="iframe-wrapper" align="center" style="z-index: 0">
+          <iframe class="external" src="detail.html"></iframe>
+         </div>
+       </div>
+    </div>
            <div class="ui basic blue button">Register</div>
            </div>
          </div>
@@ -171,24 +166,25 @@
              GSoC Introductory Seminar
             </div>
             <div class="description">
-             Brief description here.
+              A seminar to give insights into the Google Summer of Code.
+              We had an enriched Question-Answer session where lots of basic
+               doubts were cleared.
             </div>
          </div>
          <div class="extra content">
            <div class="ui two buttons">
-           <a href="gsoc.html" class="ui basic green button" id="logIn">
-    		Details
-   </a>
-	   <br><br>
-	   <div id="modaldiv" class="ui modal">
-	     <i class="close icon"></i>
-		<div>
-		    <div id="iframe-wrapper" align="center" style="z-index: 0">
-			<iframe id="external" src="detail.html"></iframe>
-		    </div>
-		</div>
-	   </div>
-
+             <a class="ui basic green button" id="logIn2">
+      		Details
+  	   </a>
+  	   <br><br>
+       <div id="modaldiv2" class="ui modal" style="width: 1200px !important;">
+        <span class="close">&times;</span>
+         <div>
+           <div class="iframe-wrapper" align="center" style="z-index: 0">
+            <iframe class="external" src="gsoc.html"></iframe>
+           </div>
+         </div>
+      </div>
            <div class="ui basic blue button">Register</div>
            </div>
          </div>
@@ -201,41 +197,26 @@
              Ubuntu Install Fest
             </div>
             <div class="description">
-             Brief description here.
+              KOSS in association with Metakgp and IEEE Section IIT Kharagpur conducted
+               a Linux Install Fest, open to everyone in IIT Kharagpur, for those who
+               would like to get Linux as either Primary or Secondary Operating system
+                alongside windows.
             </div>
          </div>
          <div class="extra content">
            <div class="ui two buttons">
-           <a href="linux.html" class="ui basic green button" id="logIn">
+           <a class="ui basic green button" id="logIn3">
     		Details
 	   </a>
 	   <br><br>
-	   <div id="modaldiv" class="ui modal">
-	     <i class="close icon"></i>
-		<div>
-		    <div id="iframe-wrapper" align="center" style="z-index: 0">
-			<iframe id="external" src="detail.html"></iframe>
-		    </div>
-		</div>
-	   </div>
-           <script type="text/javascript">
-			  $('#logIn').click(function(){
-			    $('.modal').modal('setting', {
-				    onShow : function () {
-					$(this).css({
-					    'margin' : '0px',
-					    'position' : 'fixed',
-					    'top' : '0px',
-					    'bottom' : '0',
-					    'left' : '0',
-					    'right' : '0',
-					    'width' : 'auto'
-					});
-				    }
-				  }).modal('show');
-			  });
-
-           </script>
+     <div id="modaldiv3" class="ui modal" style="width: 1200px !important;">
+      <span class="close">&times;</span>
+       <div>
+         <div class="iframe-wrapper" align="center" style="z-index: 0">
+          <iframe class="external" src="linux.html"></iframe>
+         </div>
+       </div>
+    </div>
            <div class="ui basic blue button">Register</div>
            </div>
          </div>
@@ -248,40 +229,24 @@
              Git Workshop
             </div>
             <div class="description">
-             Brief description here.
+              We conducted a workshop on Git and Github on 30th November 2016
+                and it was a fantastic success with a huge audience.
             </div>
          </div>
          <div class="extra content">
            <div class="ui two buttons">
-           <a href="git.html" class="ui basic green button" id="logIn">
+           <a class="ui basic green button" id="logIn4">
     		Details
 	   </a>
 	   <br><br>
-	   <div id="modaldiv" class="ui modal">
-	     <i class="close icon"></i>
-		<div>
-		    <div id="iframe-wrapper" align="center" style="z-index: 0">
-			<iframe id="external" src="detail.html"></iframe>
-		    </div>
-		</div>
-	   </div>
-           <script type="text/javascript">
-			  $('#logIn').click(function(){
-			    $('.modal').modal('setting', {
-				    onShow : function () {
-					$(this).css({
-					    'margin' : '0px',
-					    'position' : 'fixed',
-					    'top' : '0px',
-					    'bottom' : '0',
-					    'left' : '0',
-					    'right' : '0',
-					    'width' : 'auto'
-					});
-				    }
-				  }).modal('show');
-			  });
-           </script>
+     <div id="modaldiv4" class="ui modal" style="width: 1200px !important;">
+      <span class="close">&times;</span>
+       <div>
+         <div class="iframe-wrapper" align="center" style="z-index: 0">
+          <iframe class="external" src="git.html"></iframe>
+         </div>
+       </div>
+    </div>
            <div class="ui basic blue button">Register</div>
            </div>
          </div>
@@ -316,11 +281,19 @@
             </div>
          </div>
          <div class="extra content">
-             <a href="maker.html">
-           <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
+
+           <div class="ui two buttons" id="logIn5">
+             <a class="ui basic green button">Details</a>
+             <div id="modaldiv5" class="ui modal" style="width: 1200px !important;">
+              <span class="close">&times;</span>
+               <div>
+                 <div class="iframe-wrapper" align="center" style="z-index: 0">
+                  <iframe class="external" src="maker.html"></iframe>
+                 </div>
+               </div>
+            </div>
            </div>
-             </a>
+
          </div>
         </div>
 
@@ -338,14 +311,19 @@
             </div>
          </div>
          <div class="extra content">
-             <a href="appliedcs.html">
-           <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
+           <div class="ui two buttons" id="logIn6">
+             <a class="ui basic green button">Details</a>
+             <div id="modaldiv6" class="ui modal" style="width: 1200px !important;">
+              <span class="close">&times;</span>
+               <div>
+                 <div class="iframe-wrapper" align="center" style="z-index: 0">
+                  <iframe class="external" src="appliedcs.html"></iframe>
+                 </div>
+               </div>
+            </div>
            </div>
-                 </a>
-         </div>
         </div>
-
+</div>
         <div class="card">
          <div class="content">
            <img class="right floated mini ui image" src="../assets/images/kosslogo.png" >
@@ -359,12 +337,17 @@
             </div>
          </div>
          <div class="extra content">
-             <a href="moz.html">
-           <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
-
+           <div class="ui two buttons" id="logIn7">
+             <a class="ui basic green button">Details</a>
+             <div id="modaldiv7" class="ui modal" style="width: 1200px !important;">
+              <span class="close">&times;</span>
+               <div>
+                 <div class="iframe-wrapper" align="center" style="z-index: 0">
+                  <iframe class="external" src="moz.html"></iframe>
+                 </div>
+               </div>
+            </div>
            </div>
-            </a>
          </div>
         </div>
 
@@ -391,11 +374,17 @@
             </div>
          </div>
          <div class="extra content">
-             <a href="3dprinting.html">
-           <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
+           <div class="ui two buttons" id="logIn8">
+             <a class="ui basic green button">Details</a>
+             <div id="modaldiv8" class="ui modal" style="width: 1200px !important;">
+              <span class="close">&times;</span>
+               <div>
+                 <div class="iframe-wrapper" align="center" style="z-index: 0">
+                  <iframe class="external" src="3dprinting.html"></iframe>
+                 </div>
+               </div>
+            </div>
            </div>
-                 </a>
          </div>
         </div>
         <div class="card">
@@ -412,11 +401,17 @@
             </div>
          </div>
          <div class="extra content">
-             <a href="flipkart.html">
-           <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
+           <div class="ui two buttons" id="logIn9">
+             <a class="ui basic green button">Details</a>
+             <div id="modaldiv9" class="ui modal" style="width: 1200px !important;">
+              <span class="close">&times;</span>
+               <div>
+                 <div class="iframe-wrapper" align="center" style="z-index: 0">
+                  <iframe class="external" src="flipkart.html"></iframe>
+                 </div>
+               </div>
+            </div>
            </div>
-                 </a>
          </div>
         </div>
         <div class="card">
@@ -432,11 +427,17 @@
             </div>
          </div>
          <div class="extra content">
-             <a href="game.html">
-           <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
+           <div class="ui two buttons" id="logIn10">
+             <a class="ui basic green button">Details</a>
+             <div id="modaldiv10" class="ui modal" style="width: 1200px !important;">
+              <span class="close">&times;</span>
+               <div>
+                 <div class="iframe-wrapper" align="center" style="z-index: 0">
+                  <iframe class="external" src="game.html"></iframe>
+                 </div>
+               </div>
+            </div>
            </div>
-            </a>
          </div>
         </div>
 
@@ -462,11 +463,17 @@
             </div>
          </div>
          <div class="extra content">
-             <a href="design.html">
-           <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
+           <div class="ui two buttons" id="logIn11">
+             <a class="ui basic green button">Details</a>
+             <div id="modaldiv11" class="ui modal" style="width: 1200px !important;">
+              <span class="close">&times;</span>
+               <div>
+                 <div class="iframe-wrapper" align="center" style="z-index: 0">
+                  <iframe class="external" src="design.html"></iframe>
+                 </div>
+               </div>
+            </div>
            </div>
-                 </a>
          </div>
         </div>
         <div class="card">
@@ -483,11 +490,17 @@
             </div>
          </div>
          <div class="extra content">
-             <a href="polymer.html">
-           <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
+           <div class="ui two buttons" id="logIn12">
+             <a class="ui basic green button">Details</a>
+             <div id="modaldiv12" class="ui modal" style="width: 1200px !important;">
+              <span class="close">&times;</span>
+               <div>
+                 <div class="iframe-wrapper" align="center" style="z-index: 0">
+                  <iframe class="external" src="polymer.html"></iframe>
+                 </div>
+               </div>
+            </div>
            </div>
-                 </a>
          </div>
         </div>
         <div class="card">
@@ -503,11 +516,17 @@
             </div>
          </div>
          <div class="extra content">
-             <a href="scratch.html">
-           <div class="ui two buttons">
-             <div class="ui basic green button">Details</div>
+           <div class="ui two buttons" id="logIn13">
+             <a class="ui basic green button">Details</a>
+             <div id="modaldiv13" class="ui modal" style="width: 1200px !important;">
+              <span class="close">&times;</span>
+               <div>
+                 <div class="iframe-wrapper" align="center" style="z-index: 0">
+                  <iframe class="external" src="scratch.html"></iframe>
+                 </div>
+               </div>
+            </div>
            </div>
-            </a>
          </div>
         </div>
 
@@ -522,6 +541,48 @@
 
 <div class="ui hidden divider"></div>
 
+<script type="text/javascript">
+   $('#logIn1').click(function(){
+           $("#modaldiv1").modal('show');
+         });
+
+   $('#logIn2').click(function(){
+           $("#modaldiv2").modal('show');
+         });
+   $('#logIn3').click(function(){
+           $("#modaldiv3").modal('show');
+         });
+   $('#logIn4').click(function(){
+          $("#modaldiv4").modal('show');
+         });
+   $('#logIn5').click(function(){
+          $("#modaldiv5").modal('show');
+         });
+   $('#logIn6').click(function(){
+          $("#modaldiv6").modal('show');
+         });
+         $('#logIn7').click(function(){
+                 $("#modaldiv7").modal('show');
+               });
+         $('#logIn8').click(function(){
+                 $("#modaldiv8").modal('show');
+               });
+         $('#logIn9').click(function(){
+                $("#modaldiv9").modal('show');
+               });
+         $('#logIn10').click(function(){
+                $("#modaldiv10").modal('show');
+               });
+         $('#logIn11').click(function(){
+                $("#modaldiv11").modal('show');
+               });
+         $('#logIn12').click(function(){
+                $("#modaldiv12").modal('show');
+               });
+       $('#logIn13').click(function(){
+              $("#modaldiv13").modal('show');
+               });
+</script>
 
    <!--******     END YOUR CODE HERE      *****-->
     <!--****footer****-->
