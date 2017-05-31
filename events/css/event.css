@@ -113,12 +113,21 @@ overflow: hidden;
 	position: absolute;
 }
 
-#external{
-	width: 1108px !important;
+.external{
+	width: 1200px !important;
 }
 
-#modaldiv{
+#modaldiv1,#modaldiv2,#modaldiv3,#modaldiv4,#modaldiv5,
+#modaldiv6,#modaldiv7,#modaldiv8,#modaldiv9,#modaldiv10,
+#modaldiv11,#modaldiv12,#modaldiv13{
 	width: 1100px !important;
+}
+
+.ui-popup {
+    padding: .1em;
+}
+.ui-popup iframe {
+    border-radius: inherit;
 }
 
 .close{
