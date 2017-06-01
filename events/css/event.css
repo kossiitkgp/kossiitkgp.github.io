@@ -3,7 +3,7 @@
 	padding-top: 20px !important;
 	padding-bottom: 20px !important;
 	font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
-	height: 250px;
+	margin:0 auto;
 }
 
 .card{
@@ -23,6 +23,11 @@
 	margin: -1em -3.5em;
 }
 
+.page-name{
+    padding-top: 100px;
+    font-size: 80px;
+}
+
 .ui.vertical.stripe{
 	padding: 2em 0 3em;
 }
@@ -31,10 +36,6 @@
 	margin: 0rem 0rem;
 }
 
-.page-name{
-    padding-top: 100px;
-    font-size: 80px;
-}
 .description-brief{
     font-size: 30px;
     text-align: center;
@@ -101,8 +102,7 @@ overflow: hidden;
 
 .masthead.aligned.segment {
     min-height: 700px;
-    padding: 1em 0;
-    background: #353336 url("../images/bkg.jpg") repeat scroll 0 0 / cover;
+    background: #353336;
     background-attachment: fixed;
 }
 
@@ -114,13 +114,13 @@ overflow: hidden;
 }
 
 .external{
-	width: 1200px !important;
+	width: 100% !important;
 }
 
 #modaldiv1,#modaldiv2,#modaldiv3,#modaldiv4,#modaldiv5,
 #modaldiv6,#modaldiv7,#modaldiv8,#modaldiv9,#modaldiv10,
 #modaldiv11,#modaldiv12,#modaldiv13{
-	width: 1100px !important;
+	width: 80% !important;
 }
 
 .ui-popup {
@@ -152,9 +152,43 @@ font-weight: bold;
 	max-width: 100%;
 }
 #desc {
-	width: 1050px !important;
+	width: 100%;
 }
 #desc1 {
 	width: 100% !important;
-	padding-left: 25px !important;
+}
+@media only screen and (max-width: 600px) {
+    .card{
+			position:absolute;
+			left:50%;
+			transform:translateX(-50%);
+			margin:0 auto;
+		}
+		.ui.three.stackable.cards{
+			width:90%;
+			margin:0 auto;
+		}
+		.page-name{
+			font-size:40px;
+		}
+		.points{
+			font-size:20px;
+			text-align:center;
+			margin:0 auto;
+		}
+		.row{
+			width:80%;
+		}
+		.item1{
+			margin:0 auto;
+		}
+		.first{
+			padding-left:10%;
+		}
+}
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+	.ui.middle.aligned.stackable.grid.container{
+		position:relative;
+		margin:0 auto;
+	}
 }
