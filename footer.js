@@ -2,34 +2,25 @@ document.write('\
      <div class="ui inverted vertical footer segment">\
         <div class="ui center aligned container">\
             <div class="ui stackable inverted divided grid">\
-                <div class="three wide column">\
+                <div class="four wide column">\
                     <h4 class="ui inverted header">Main Menu</h4>\
                     <div class="ui inverted link list">\
                         <a href="./index.html" class="item">Home</a>\
-                        <a href="./events/index.html" class="item">Events</a>\
-                        <a href="./team/index.html" class="item">Our Team</a>\
-                        <a href="./projects/index.html" class="item">Projects</a>\
+                        <a href="./about" class="item">About Us</a>\
+                        <a href="./events" class="item">Events</a>\
+                        <a href="./projects" class="item">Projects</a>\
                     </div>\
                 </div>\
-                <div class="three wide column">\
+                <div class="four wide column">\
                     <h4 class="ui inverted header">Contact Us</h4>\
                     <div class="ui inverted link list">\
                         <a href="https://www.facebook.com/kossiitkgp/" class="item">Facebook</a>\
                         <a href="mailto:kossiitkgp@gmail.com" class="item">kossiitkgp@gmail.com</a>\
                     </div>\
                 </div>\
-                <div class="three wide column">\
-                    <h4 class="ui inverted header">Group 3</h4>\
-                    <div class="ui inverted link list">\
-                        <a href="#" class="item">Link One</a>\
-                        <a href="#" class="item">Link Two</a>\
-                        <a href="#" class="item">Link Three</a>\
-                        <a href="#" class="item">Link Four</a>\
-                    </div>\
-                </div>\
-                <div class="seven wide column">\
-                    <h4 class="ui inverted header">Footer Header</h4>\
-                    <p>Extra space for a call to action inside the footer that could help re-engage users.</p>\
+                <div class="six wide column">\
+                    <h4 class="ui inverted header">Kharagpur Open Source Society</h4>\
+                    <div class="ui inverted link list"><a href="http://iitkgp.ac.in" target="_blank" class="item">Indian Institute of Technology Kharagpur, India</a></div>\
                 </div>\
             </div>\
             <div class="ui inverted section divider"></div>\
@@ -47,8 +38,8 @@ document.write('\
         }
         document.write('\
             <div class="ui horizontal inverted small divided link list">\
-                <a class="item" href="#">Site Map</a>\
-                <a class="item" href="#">Contact Us</a>\
+                <a class="item" href="https://github.com/kossiitkgp">GitHub</a>\
+                <a class="item" href="./contact">Contact Us</a>\
             </div>\
         </div>\
     </div>\
