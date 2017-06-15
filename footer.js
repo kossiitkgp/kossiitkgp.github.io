@@ -5,10 +5,10 @@ document.write('\
                 <div class="four wide column">\
                     <h4 class="ui inverted header">Main Menu</h4>\
                     <div class="ui inverted link list">\
-                        <a href="./index.html" class="item">Home</a>\
-                        <a href="./about" class="item">About Us</a>\
-                        <a href="./events" class="item">Events</a>\
-                        <a href="./projects" class="item">Projects</a>\
+                        <a href="../index.html" class="item">Home</a>\
+                        <a href="../about" class="item">About Us</a>\
+                        <a href="../events" class="item">Events</a>\
+                        <a href="../projects" class="item">Projects</a>\
                     </div>\
                 </div>\
                 <div class="four wide column">\
