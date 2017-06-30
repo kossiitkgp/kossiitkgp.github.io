@@ -94,6 +94,14 @@ overflow: hidden;
 	border: solid 1px #fff;
 }
 
+.sp-name h2 {
+	display: inline;
+}
+
+.sp-name p {
+	display: inline;
+}
+
 .hn2{
     font-size: 26px;
     font-weight: lighter;
@@ -156,7 +164,10 @@ font-weight: bold;
 }
 #desc1 {
 	width: 100% !important;
+	display: flex;
+	justify-content: center;
 }
+
 @media only screen and (max-width: 600px) {
     .card{
 			position:absolute;
