@@ -8,6 +8,7 @@ closedissues=0
 openprs=0
 closedprs=0
 itercount=0
+os.system("git pull --rebase origin master")
 while (1):
             name=f.readline()
             if not name: break
@@ -82,7 +83,7 @@ repos=set(repos[:2])
 print repos
 print "open issues: "+str(openissues)
 print "closed issues: "+str(closedissues)
-print "open prs: "+str(closedprs)
+print "open prs: "+str(openprs)
 print "closed prs: "+str(closedprs)
 print "repeated: "+str(itercount)
 # import os
@@ -114,5 +115,4 @@ f=open("index.html","r")
 all_prev_lines=f.read()
 if all_prev_lines!=all_lines:
     f=open("index.html","w")
-    os.system("git pull --rebase origin master")
     f.write(all_lines)
