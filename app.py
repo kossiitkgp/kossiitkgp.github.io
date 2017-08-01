@@ -79,7 +79,7 @@ while (1):
                     
 
 
-repos=set(repos[:2])
+repos=set(repos)
 print repos
 print "open issues: "+str(openissues)
 print "closed issues: "+str(closedissues)
