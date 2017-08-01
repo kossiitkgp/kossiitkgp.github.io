@@ -8,6 +8,7 @@ rvm:
 before_install:
   - sudo apt-get install pandoc
   - gem install asciidoctor
+  - git checkout master
 install: 
   - gem install html-proofer
   - pip install requests
