@@ -86,7 +86,7 @@ print "closed issues: "+str(closedissues)
 print "open prs: "+str(openprs)
 print "closed prs: "+str(closedprs)
 print "repeated: "+str(itercount)
-# import os
+# import os<!-- Closed issues -->
 lines_of_code=0
 for repo in repos:
   os.system("git clone --depth 1 "+str(repo)+".git ")
@@ -109,7 +109,7 @@ all_lines=f.read()
 all_lines=all_lines.replace("<!-- Open PRs -->",str(openprs))
 all_lines=all_lines.replace("<!-- Closed PRs -->",str(closedprs))
 all_lines=all_lines.replace("<!-- Open Issues -->",str(openissues))
-all_lines=all_lines.replace("<!-- Closed Issues -->",str(closedissues))
+all_lines=all_lines.replace(" <!-- Closed issues -->",str(closedissues))
 all_lines=all_lines.replace("<!-- Lines -->",str(lines_of_code))
 f=open("index.html","r")
 all_prev_lines=f.read()

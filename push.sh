@@ -8,7 +8,7 @@ setup_git() {
 commit_website_files() {
   git checkout -b master
   git add index.html
-  git commit --message "update no"
+  git commit --message "update counter"
 }
 
 upload_files() {
