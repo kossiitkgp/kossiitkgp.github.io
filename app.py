@@ -82,11 +82,16 @@ while (1):
 repos=set(repos)
 print repos
 
+print "before comma: "
+print openissues
+print closedissues
+print openprs
+print closedprs
 
 def insertcomma(num):
-	lenght=len(num)
+	length=len(num)
 	count=0
-	while(count<=length):
+	while(count<length):
 		if count==1:
 			count+=1; continue
 		if count%2==1:
@@ -105,7 +110,7 @@ print "open issues: "+openissues
 print "closed issues: "+closedissues
 print "open prs: "+openprs
 print "closed prs: "+closedprs
-print "repeated: "+itercount
+print "repeated: "+str(itercount)
 
 # import os<!-- Closed issues -->
 lines_of_code=0
