@@ -81,11 +81,32 @@ while (1):
 
 repos=set(repos)
 print repos
-print "open issues: "+str(openissues)
-print "closed issues: "+str(closedissues)
-print "open prs: "+str(openprs)
-print "closed prs: "+str(closedprs)
-print "repeated: "+str(itercount)
+
+
+def insertcomma(num):
+	lenght=len(num)
+	count=0
+	while(count<=length):
+		if count==1:
+			count+=1; continue
+		if count%2==1:
+			num=num[:length-count]+','+num[length-count:]
+		count+=1
+	return num
+
+
+
+openissues = insertcomma(str(openissues))
+closedissues = insertcomma(str(closedissues))
+openprs = insertcomma(str(openprs))
+closedprs = insertcomma(str(closedprs))
+
+print "open issues: "+openissues
+print "closed issues: "+closedissues
+print "open prs: "+openprs
+print "closed prs: "+closedprs
+print "repeated: "+itercount
+
 # import os<!-- Closed issues -->
 lines_of_code=0
 for repo in repos:
@@ -100,9 +121,11 @@ for repo in repos:
     os.system("rm -rf "+str(repo.split('/')[-1]))
   except:
     pass
-  print ("lines of code",lines_of_code)
 
-print lines_of_code
+# lines_of_code=str(lines_of_code)
+# print lines_of_code
+lines_of_code = insertcomma(str(lines_of_code))
+print ("lines of code",lines_of_code)
 
 f=open("index.tmpl","r")
 all_lines=f.read()
