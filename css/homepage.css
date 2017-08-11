@@ -148,6 +148,17 @@
     margin-top:3em;
 }
 
+/* Stats */
+.ui.vertical.stripe.segment.stats {
+  background: #f5f5f5 none repeat scroll 0 0;
+  padding: 4em;
+  text-align: center;
+}
+
+.ui.vertical.stripe.segment.about {
+  border: 0 none;
+}
+
 /* Events */
 
 .events .ui.middle.aligned.container {
