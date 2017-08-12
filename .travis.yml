@@ -14,8 +14,8 @@ install:
   - pip install requests
   - sudo apt install cloc
 script:
-  - python app.py
   - ruby proofer.rb
+  - python app.py
   - bash push.sh
 
 branches:
