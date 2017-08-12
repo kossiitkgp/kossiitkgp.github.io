@@ -22,6 +22,14 @@
   <script src="semantic-ui/transition.js"></script>
   <script src="js/homepage.js"></script>
   <script src="header.js"></script>
+  <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 15,
+                time: 900
+            });
+        });
+  </script>
 
 </head>
 <body>
@@ -112,24 +120,24 @@ Every year KOSS plans to hold events for familiarizing students with UNIX tools,
 <div class="ui vertical stripe segment stats">
 	<div class="ui five column stackable grid">
 		<div class="column">
-			<h3>114</h3>
+			<h3><span class="counter">114</span></h3>
 			<p>PRs open</p>
 		</div>
 		<div class="column">
-			<h3>784</h3>
+			<h3><span class="counter">784</span></h3>
 			<p>PRs closed</p>
 		</div>
 			<div class="column">
-			<h3>114</h3>
+			<h3><span class="counter">114</span></h3>
 			<p>Issues opened</p>
 		</div>
 		<div class="column">
-			<h3>301</h3>
+			<h3><span class="counter">301</span></h3>
 			<p>Issues closed</p>
 		</div>
 			<div class="column">
-			<h3>43,93,424</h3>
-			<p>Lines</p>
+			<h3><span class="counter">43,93,424</span></h3>
+			<p>Lines added</p>
 		</div>
 	</div>
 </div>
@@ -212,6 +220,8 @@ Every year KOSS plans to hold events for familiarizing students with UNIX tools,
         </div>
     </div>
 </div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="assets/library/jquery.counterup.min.js"></script>
 
 </body>
 </html>
