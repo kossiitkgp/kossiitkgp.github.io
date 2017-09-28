@@ -39,7 +39,7 @@ document.write('\
         document.write('\
             <div class="ui horizontal inverted small divided link list">\
                 <a class="item" href="https://github.com/kossiitkgp">GitHub</a>\
-                <a class="item" href="./contact">Contact Us</a>\
+                <a class="item" href="/contact">Contact Us</a>\
             </div>\
         </div>\
     </div>\
