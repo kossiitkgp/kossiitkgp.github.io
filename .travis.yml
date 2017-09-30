@@ -16,6 +16,7 @@ install:
 script:
   - ruby proofer.rb
   - python app.py
+  - python prof_app.py
   - bash push.sh
 
 branches:
