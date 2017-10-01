@@ -14,14 +14,15 @@ def render_jinja_html(template_loc, file_name, **context):
 
 def profile(name, position=None):
     url = "https://api.github.com/graphql"
-    headers = {"Authorization": "Basic "+os.environ['OUATH_KEY']}
+    headers = {"Authorization": "Basic ZGlieWFkYXM6bmFuZGFEQVNAOTk="}
     query = json.dumps({"query": "query{user(login: \"" + name +
                         "\") { name email avatarUrl url bio websiteUrl"
                         " pinnedRepositories(first: 6) "
                         "{ nodes { name url description } } } }"})
     r = requests.post(url, headers=headers, data=query)
+    f = r.content.decode("utf-8")
     print r.content.decode("utf-8")
-    data_dict = json.loads(r.content.decode("utf-8"), sorted)
+    data_dict = json.loads(str(f))
     pinned_repos = data_dict['data']['user']['pinnedRepositories']['nodes']
     image = data_dict['data']['user']['avatarUrl']
     gh_link = data_dict['data']['user']['url']
@@ -54,9 +55,9 @@ def generate(id=None):
                 for j in json_data[i]:
                     try:
                         profile(j, i)
-                    except Exception:
+                    except Exception as e:
                         print "Error generating profile for :- "
-                        print "ID - " + j         
+                        print "ID - " + j
     return "Completed"
 
 
