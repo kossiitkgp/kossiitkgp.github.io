@@ -20,7 +20,7 @@ def profile(name, position=None):
                         " pinnedRepositories(first: 6) "
                         "{ nodes { name url description } } } }"})
     r = requests.post(url, headers=headers, data=query)
-    print(r.content.decode("utf-8"))
+    print r.content.decode("utf-8")
     data_dict = json.loads(r.content.decode("utf-8"), sorted)
     pinned_repos = data_dict['data']['user']['pinnedRepositories']['nodes']
     image = data_dict['data']['user']['avatarUrl']
@@ -46,7 +46,6 @@ def profile(name, position=None):
 
 def generate(id=None):
     if id is not None:
-        print("here")
         profile(id, position="Member")
     else:
         with open("data.json") as json_data_file:
@@ -56,8 +55,8 @@ def generate(id=None):
                     try:
                         profile(j, i)
                     except Exception:
-                        print("Error generating profile for :- ")
-                        print("ID - " + j)
+                        print "Error generating profile for :- "
+                        print "ID - " + j         
     return "Completed"
 
 

@@ -12,6 +12,7 @@ before_install:
 install: 
   - gem install html-proofer
   - pip install requests
+  - pip install Jinja2
   - sudo apt install cloc
 script:
   - ruby proofer.rb
