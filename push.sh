@@ -7,7 +7,7 @@ setup_git() {
 
 commit_website_files() {
   git checkout -b master
-  git add -u
+  git add index.html profiles/* about/*
   git commit --message "update counter"
 }
 
