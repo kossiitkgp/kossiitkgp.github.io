@@ -29,22 +29,22 @@ function header(location)
 			'<a class="item" href="../'.concat(home_loc,'">Home</a><a class="item" href="../',team_loc,'">About Us</a><a class="item" href="../',events_loc,'">Events</a><a class="item" href="../',projects_loc,'">Projects</a><a class="active item" href="../',contact_loc,'">Contact Us</a>');}
 		else if (location==="home inv right"){
             string=
-			'<a class="ui inverted button" href="./'.concat(terminal_loc,'">Terminal</a><a class="ui inverted button"  target="_blank" href="https://blog.kossiitkgp.in">Blog</a>');}
-		else if (location==="home right"){
+			/*'<a class="ui inverted button" href="./'.concat(terminal_loc,'">Terminal</a>&nbsp&nbsp&nbsp*/'<a class="ui inverted button"  target="_blank" href="https://blog.kossiitkgp.in">Blog</a>'/*)*/;}
+            else if (location==="home right"){
             string=
-			'<a class="ui button" href="./'.concat(terminal_loc,'">Terminal</a>&nbsp&nbsp&nbsp<a class="ui button"  target="_blank" href="https://blog.kossiitkgp.in">Blog</a>');}
+			/*'<a class="ui button" href="./'.concat(terminal_loc,'">Terminal</a>&nbsp&nbsp&nbsp*/'<a class="ui button"  target="_blank" href="https://blog.kossiitkgp.in">Blog</a>'/*)*/;}
 		else if (location==="inv right"){
             string=
-			'<a class="ui inverted button" href="../'.concat(terminal_loc,'">Terminal</a><a class="ui inverted button"  target="_blank" href="https://blog.kossiitkgp.in">Blog</a>');}
+			/*'<a class="ui inverted button" href="../'.concat(terminal_loc,'">Terminal</a>*/'<a class="ui inverted button"  target="_blank" href="https://blog.kossiitkgp.in">Blog</a>'/*)*/;}
 		else if (location==="right"){
             string=
-			'<a class="ui button" href="../'.concat(terminal_loc,'">Terminal</a>&nbsp&nbsp&nbsp<a class="ui button"  target="_blank" href="https://blog.kossiitkgp.in">Blog</a>');}
+			/*'<a class="ui button" href="../'.concat(terminal_loc,'">Terminal</a>&nbsp&nbsp&nbsp*/'<a class="ui button"  target="_blank" href="https://blog.kossiitkgp.in">Blog</a>'/*)*/;}
 		else if (location==="term inv right"){
             string=
-			'<a class="ui inverted secondary button" href="./'.concat(terminal_loc,'">Terminal</a><a class="ui inverted button"  target="_blank" href="https://blog.kossiitkgp.in">Blog</a>');}
+			/*'<a class="ui inverted secondary button" href="./'.concat(terminal_loc,'">Terminal</a>*/'<a class="ui inverted button"  target="_blank" href="https://blog.kossiitkgp.in">Blog</a>'/*)*/;}
 		else if (location==="term right"){
             string=
-			'<a class="ui primary button" href="./'.concat(terminal_loc,'">Terminal</a>&nbsp&nbsp&nbsp<a class="ui button"  target="_blank" href="https://blog.kossiitkgp.in">Blog</a>');}
+			/*'<a class="ui primary button" href="./'.concat(terminal_loc,'">Terminal</a>&nbsp&nbsp&nbsp*/'<a class="ui button"  target="_blank" href="https://blog.kossiitkgp.in">Blog</a>'/*)*/;}
 			
     document.write(string);
 }
