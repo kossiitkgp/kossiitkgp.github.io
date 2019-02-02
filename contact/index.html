@@ -22,7 +22,7 @@
   <script src="../semantic-ui/transition.js"></script>
   <script src="../js/homepage.js"></script>
   <script src="../header.js"></script>
-  
+
    <style>
   .masthead.aligned.segment {
     min-height: 500px;
@@ -104,7 +104,7 @@
      <div class="ui text container">
             <div class="page-name">Contact Us</div>
             <div class="hn2">Have something to say or have some queries?</div>
-            <div class="hn2">Feel free to drop us a message!</div>
+            <div class="hn2">Email us at <i>contact@kossiitkgp.org</i></div>
          </div>
      </div>
      <div class="elementor-shape elementor-shape-bottom" data-negative="false">
@@ -116,11 +116,11 @@
  </div>
     <!--******     START CODING FROM HERE       *****-->
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         function send(form) {
                 document.getElementById('flag').innerHTML = "";
                 document.getElementById('captcha-flag').innerHTML = '';
-                   
+
                     var request = new XMLHttpRequest();
                     var data = new FormData(form);
                     var url = "https://test-mail-dpd.herokuapp.com/mail";
@@ -137,11 +137,11 @@
                                 document.getElementById('button').setAttribute("class","ui huge button");
                             }
                         }
-                    };  
+                    };
                     request.open("POST", url , true);
                     request.send(data);
-      
-                }       
+
+                }
 
         function captcha_verify(form){
                   if(validate() && capcheck()){
@@ -152,9 +152,9 @@
                     request.onreadystatechange = function() {
                       if (request.readyState === 4) {
                         if (request.status === 200) {
-                            send(form);    
+                            send(form);
                             return true;
-                            
+
                         }
                         else{
                             document.getElementById('flag').innerHTML = "Not Sent! Verify Captcha again";
@@ -169,10 +169,10 @@
                       }));
                     }
                   // return true;
-                  //           
+                  //
         }
 
-        function capcheck() { 
+        function capcheck() {
                   var data = grecaptcha.getResponse();
                   if (data != '') {
                     return true;
@@ -191,10 +191,10 @@
                         //alert("Please enter your name!");
                         document.getElementById("name-error").setAttribute("class","ui form error");
                         flag = 1;
-               }    
+               }
                else{
                         document.getElementById("name-error").removeAttribute("class");
-            
+
                }
              if(document.getElementById("email").value == ""){
                         document.getElementById("email-error").setAttribute("class","ui form error");
@@ -208,7 +208,7 @@
                         }
                         else{
                             document.getElementById("email-error").setAttribute("class","ui form error");
-                            flag = 1;  
+                            flag = 1;
                         }
                }
                if(flag == 1){
@@ -218,12 +218,12 @@
                }
         }
 
-    </script>
+    </script> -->
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 
     <!--Below is a sample layout. You don't have to compulsorily use it-->
-    <div class="ui vertical stripe segment">
+    <!-- <div class="ui vertical stripe segment">
         <div class="ui middle aligned stackable grid container">
             <div class="row">
                 <div class="wide column">
@@ -233,7 +233,7 @@
                             <label>Name</label>
                             <input type="text" name="name" id="name" placeholder="Your Name">
                         </div>
-                       
+
                         <div  id="name-error">
                         <div class="ui error message">
                             <div class="header">Error!</div>
@@ -255,7 +255,7 @@
                             <label>Message</label>
                             <textarea name="msg"></textarea>
                         </div>
-                    </form>    
+                    </form>
                 </div>
             </div>
             <div class="row">
@@ -268,11 +268,11 @@
                     <label id="flag" >
                     </label>
                     <label id="captcha-flag"></label>
-                    </div>    
-                
+                    </div>
+
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 

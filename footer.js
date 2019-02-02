@@ -15,7 +15,7 @@ document.write('\
                     <h4 class="ui inverted header">Contact Us</h4>\
                     <div class="ui inverted link list">\
                         <a href="https://www.facebook.com/kossiitkgp/" class="item">Facebook</a>\
-                        <a href="mailto:contact@kossiitkgp.in" class="item">contact@kossiitkgp.in</a>\
+                        <a href="mailto:contact@kossiitkgp.org" class="item">contact@kossiitkgp.org</a>\
                     </div>\
                 </div>\
                 <div class="six wide column">\
