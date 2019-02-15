@@ -1,3 +1,6 @@
 [submodule "content/blog"]
 	path = content/blog
 	url = https://github.com/kossiitkgp/blog.git
+[submodule "content/docs"]
+	path = content/docs
+	url = https://github.com/kossiitkgp/docs.git
