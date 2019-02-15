@@ -4,3 +4,6 @@
 [submodule "content/docs"]
 	path = content/docs
 	url = https://github.com/kossiitkgp/docs.git
+[submodule "themes/koss-hugo-theme"]
+	path = themes/koss-hugo-theme
+	url = https://github.com/kossiitkgp/koss-hugo-theme.git
