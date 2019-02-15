@@ -1,3 +1,41 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+# Hostname (and path) to the root.
+baseURL = "https://kossiitkgp.org"
+
+# Enable to turn relative URLs into absolute.
+canonifyURLs = true
+
+# The directory from where Hugo reads content files.
+contentDir = "content"
+
+# The directory from where Hugo reads data files.
+dataDir = "data"
+
+# The default content language.
+defaultContentLanguage = "en"
+
+# Enable rendering of emojis
+enableEmoji = true
+
+# The site’s language code used to generate RSS.
+languageCode = "en"
+
+# The directory from where Hugo reads layouts (templates).
+layoutDir = "layouts"
+
+# Default number of pages per page in pagination.
+paginate = 10
+
+# The directory to where Hugo will write the final static site (the HTML files etc.).
+publishDir = "docs"
+
+# A directory or a list of directories from where Hugo reads static files.
+staticDir = "static"
+
+# The directory where Hugo reads the themes from.
+themesDir = "themes"
+
+# Theme to use (located by default in /themes/THEMENAME/).
+theme = "koss-hugo-theme"
+
+# Site title.
+title = "Kharagpur Open Source Society"
