@@ -14,7 +14,7 @@ try:
 except:
     print("Incorrect file location. Try again.")
 
-objectjs=open("objects.js","w")
+objectjs=open("team_list.js","w")
 
 objectjs.write("Advisors=[")
 for i in range(AdNum):
