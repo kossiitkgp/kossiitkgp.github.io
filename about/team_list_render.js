@@ -1,8 +1,6 @@
 var sec= document.getElementById('profiles')
 for(i=0;i<Advisors.length;i++)
 {
-    if((Advisors[i][1]=="gauravrpjain")||(Advisors[i][1]=="bad-smruti"))
-        continue;
     sec.innerHTML+=
     `<div class="ui fluid card"> <article class="col-sm-6 profile">
     <div class="profile-header">
