@@ -7,3 +7,6 @@
 
 
 Edit the header at `header.js` and footer at `footer.js` at the root.
+
+Update About Us page by running `about/script.py`.
+
